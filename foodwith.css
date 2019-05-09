@@ -1,0 +1,71 @@
+.head {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 50px;
+    background-color: #fff;
+}
+.logo {
+    width: 114px;
+    height: 50px;
+}
+.gnb_menu {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 46px;
+    height: 50px;
+}
+.none_img {
+    background: url(image/thumbnail_profile_none.jpg) no-repeat;
+}
+
+.section {
+    margin-top: 50px;
+
+}
+.banner {
+    background-color: #ffee02;
+    padding: 20px 35px;   
+}
+.banner .img {
+    width: 250px;
+    height: 180px;
+    margin: 0 auto;
+}
+.banner .text {
+    display: -webkit-box;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 2;
+    padding: 0 35px;
+    max-height: 48px;
+    font-size: 22px;
+    line-height: 24px;
+    color: #333;
+    line-height: 28px;
+
+}
+.description {
+    background-color: #f0f0f0;
+}
+.description .img {
+    border-top: 1px solid rgba(0, 0, 0, 0.1);
+    margin: 15px;
+    width: 100%;
+}
+.description .text {
+    padding: 0 15px;
+   
+    max-height: 40px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 2;
+    font-size: 14px;
+    line-height: 20px;
+    text-align: center;
+    color: #333;
+}
