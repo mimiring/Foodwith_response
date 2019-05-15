@@ -46,3 +46,11 @@ table {
     border-collapse: collapse;
     border-spacing: 0;
 }
+
+
+/*written by mimi*/
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
