@@ -1,3 +1,7 @@
+body {
+    font-family: 나눔고딕, NanumGothic, 돋움, sans-serif;
+}
+
 .head {
     position: fixed;
     top: 0;
@@ -9,86 +13,351 @@
 .logo {
     display: inline-block;
     float: left;
-    padding: 10px;
-    width: 114px;
-    height: 50px;
+    padding-left: 10px;
 }
 .logo .img{
-    background: url(image/logo_m.png) no-repeat;
-    width: 100%;
-    height: 100%;
+    position: relative;
+    width: 114px;
+    height: 50px;
+    background: url(image/logo_m.png) no-repeat center;
+    background-size: 100%;
+
 }
 .gnb_menu {
     display: inline-block;
     float: right;
-    top: 3px;
-    right: 0;
-    padding: 10px;
-    width: 46px;
-    height: 50px;
+
 }
 .gnb_menu .icon {
-    background: url(image/icon_menu.png) no-repeat;
-    width: 100%;
-    height: 100%;
+    background: url(image/icon_menu.png) no-repeat center;
+    width: 46px;
+    height: 50px;
+    background-size: 50%;
 }
 .nav .name {
     display: none;
     float: left;
     width: 100%;
-    height: 26px;
+    height: 36px;
     font-size: 22px;
     text-align: center;
     background-color: #fff;
 }
-.none_img {
-    background: url(image/thumbnail_profile_none.jpg) no-repeat;
-}
+
 
 .main_section {
-    margin-top: 70px;
+    margin-top: 50px;
 }
-.banner {
+.main_section .banner {
     background-color: #ffee02;
-    padding: 50px 35px;   
+    padding : 20px 35px;
 }
-.banner .img {
+.main_section .banner .img {
     width: 250px;
     height: 180px;
     margin: 0 auto;
 }
-.banner .text {
+.main_section .banner .text {
     display: -webkit-box;
     overflow: hidden;
     text-overflow: ellipsis;
     -webkit-box-orient: vertical;
     -webkit-line-clamp: 2;
-    padding: 0 35px;
-    max-height: 48px;
+    max-height: 56px;
     font-size: 22px;
-    line-height: 24px;
+    line-height: 28px;
     color: #333;
+}
+.main_section .writer:before {
+    content: '';
+    display: block;
+    width: 30px;
+    margin: 20px auto;
+    border-bottom: 1px solid #000;
+}
+.main_section .writer {
+    text-align: center;
+}
+.main_section .writer .profile_img {
+    vertical-align: middle;
+    background: url(image/thumbnail_profile_none.jpg) no-repeat;
+    display: inline-block;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+}
+.main_section .writer .name {
+    vertical-align: middle;
+    display: inline-block;
+    font-size: 16px;
+    color: #333;
+    line-height: 43px;
+    text-align: center;
+}
+ul {
+
 }
 .main_section .description {
     background-color: #f0f0f0;
+    display: inline-block;
+}
+.main_section .description .img_wrap {
+    margin: 15px;
+    
 }
 .main_section .description .img {
     border-top: 1px solid rgba(0, 0, 0, 0.1);
-    margin: 15px;
     width: 100%;
 }
 .main_section .description .text {
-    padding: 0 15px;
-    max-height: 40px;
+    margin: 10px 15px 25px;
+    max-height: 18px;
+    display: -webkit-box;
     overflow: hidden;
     text-overflow: ellipsis;
     -webkit-box-orient: vertical;
-    -webkit-line-clamp: 2;
+    -webkit-line-clamp: 1;
     font-size: 14px;
-    line-height: 20px;
+    line-height: 18px;
     text-align: center;
     color: #333;
 }
+.main_section .description .more_wrap {
+    padding: 15px;
+}
+.main_section .description .more_wrap .more_view {
+    padding: 0;
+    width: 100%;
+    height: 65px;
+    font-size: 16px;
+    color: #333;
+    vertical-align: middle;
+    background-color: #fff;
+    border: 1px solid #bdbdbd;
+}
+.main_section .description .more_view .arrow {
+    background: url(image/icon_arrow_more.png) no-repeat;
+    width: 16px;
+    height: 16px;
+    background-size: 100%;
+    display: inline-block;
+    margin: 0 5px;
+    vertical-align: middle;
+}
+.main_section .send_msg {
+    padding : 25px 15px;
+    background-color: #f4f5f7;
+}
+.main_section .send_msg .title {
+    margin-bottom: 20px;
+}
+.main_section .send_msg .send_form {
+    position: relative;
+}
+.main_section .send_msg .title .msg1 {
+    margin: 10px 0;
+    overflow: hidden;
+    white-space: nowrap;
+    font-size: 22px;
+    color: #333;
+    text-align: center;
+}
+.main_section .send_msg .title .msg2 {
+    margin: 10px 0;
+    overflow: hidden;
+    white-space: nowrap;
+    font-size: 14px;
+    color: #333;
+    text-align: center;
+}
+.main_section .send_msg form {
+    padding: 25px;
+    background-color: #fff;
+    position: relative;
+}
+.main_section .send_msg .send_form .label_name {
+    display: block;
+    font-size: 16px;
+    color: #333;
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+.main_section .send_msg .send_form .nickname {
+    width: 100%;
+    border: none;
+    border-bottom: 1px solid #c1c1c1;
+    margin-bottom: 15px;
+    padding: 10px 0;
+    font-size: 14px;
+    color: #333;
+}
+.main_section .send_msg .send_form .send_button {
+    position: absolute;
+    top: 15px;
+    right: 25px;
+    width: 70px;
+    height: 30px;
+    border: 2px solid #bdbdbd;
+    background-color: #e9e9e9;
+    font-size: 11px;
+    color: #666;
+}
+.main_section .send_msg .send_form .nickname::placeholder {
+    font-size: 14px;
+    color: #acacac;
+}
+.main_section .send_msg .send_form .email {
+    margin: 5px 0 15px;
+    position: relative;
+}
+.main_section .send_msg .send_form .email .id_wrap {
+    display: inline-block;
+    width: 49%;
+}
+
+.main_section .send_msg .send_form .email .id {
+    display: inline-block;
+    width: 100%;
+    box-sizing: border-box;
+    height: 37px;
+    border: none;
+    border-bottom: 1px solid #c1c1c1;
+    padding: 10px 0;
+    font-size: 14px;
+    color: #333;
+    vertical-align: middle;
+}
+
+.main_section .send_msg .send_form .email_select {
+    display: inline-block;
+    position: absolute;
+    left: 53%;
+    right: 0;
+    bottom: 1px;
+    vertical-align: middle;
+    border-bottom: 1px solid #c1c1c1;
+}
+.main_section .send_msg .send_form .email_select:after {
+    content: '';
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    display: block;
+    background: url(image/icon_arrow_email.png) no-repeat;
+    width: 20px;
+    height: 20px;
+    background-size: 60%;
+}
+.main_section .send_msg .send_form .email_select .list{
+    width: 100%;
+    border: none;
+    padding: 10px 0;
+    padding-left: 2%;
+    appearance: none;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+}
+select {
+    appearance: none;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+}
+.main_section .send_msg .send_form .message {
+    width: 100%;
+    height: 100px;
+    box-sizing: border-box;
+    resize: none;
+}
+.main_section .send_msg .send_form .message::placeholder {
+    font-size: 14px;
+    color: #acacac;
+    font-family: 나눔고딕, NanumGothic, 돋움, sans-serif; 
+}
+
+.main_section .notice_wrap {
+    padding: 20px 15px;
+    padding-bottom: 20px;
+    background-color: #f0f0f0;
+}
+.main_section .notice {  
+    position: relative;
+    display: inline-block;
+}
+.main_section .notice:after{
+    content: '';
+    padding: 0 100%;
+    border-bottom: 1px solid #c1c1c1;
+}
+.main_section .notice_wrap .notice .title {
+    margin-bottom: 10px;
+    font-size: 16px;
+    color: #333;
+    font-weight: bold;
+}
+.main_section .notice_wrap .notice .text {
+    display: -webkit-box;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 1;
+    max-height: 16px;
+    font-size: 14px;
+    line-height: 16px;
+    color: #333;
+}
+.main_section .notice_wrap .notice .more_view {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+
+    font-size: 14px;
+    color: #333;
+}
+.main_section .notice_wrap .information .title {
+    padding-top: 20px;
+    margin-bottom: 10px;
+    font-size: 16px;
+    color: #333;
+    font-weight: bold;
+}
+.main_section .information .text {
+    display: inline-block;
+    padding-right: 10px;
+    text-align: center;
+    font-size: 14px;
+    color : #333;
+    border-right: 1px solid #c1c1c1;
+}
+.main_section .information .text:last-child {
+    padding-left: 10px;
+    border: none;
+}
+
+.foot {
+    padding: 20px 25px;
+    background-color: #fff;
+    font-size: 14px;
+    color: #333;
+}
+.foot .title {
+    margin-bottom: 10px;
+    text-align: center;
+}
+.foot .text {
+    padding-right: 5px;
+}
+.foot .text:last-child{
+    padding-right: 0;
+}
+.foot .copyright {
+    text-align: center;
+}
+.bold {
+    font-weight: bold
+}
+
+
+
 
 .view_section .title_wrap {
     margin: 30px 15px;

@@ -20,97 +20,128 @@
             </header>
 
             <section class="main_section">
-                <div class="banner">
-                    <img src="image/banner_strawberry.png" class="img">
-                    <p class="text">
-                        오븐 없이도 베이킹 가능! 달콤 상큼 봄맞이 노오븐 딸기 케이크 만들기!
-                    </p>
-                    <div class="writer">
-                        <div class="none_img"></div>
-                        <img src="image/thumbnail_profile.jpg">
-                        <span class="name">FULLMOON</span>
+                <a href="#" class="banner_wrap">
+                    <div class="banner">
+                        <img src="image/banner_strawberry.png" class="img">
+                        <p class="text">
+                            오븐 없이도 베이킹 가능! 달콤 상큼 봄맞이 노오븐 딸기 케이크 만들기!
+                        </p>
+                        <div class="writer">
+                            <img src="image/thumbnail_profile.jpg" class="profile_img">
+                            <div class="name">FULLMOON</div>
+                        </div>
                     </div>
-                </div>
+                </a>
                 <div class="description">
                     <ul>
-                        <li>
-                            <img src="image/thumbnail_pumpkin.jpg" class="img">
-                            <p class="text">
-                                따듯 담백 호박! 든든한 호박죽으로 한끼 해결하기
-                            </p>
+                        <li class="img_wrap">
+                            <a href="#" class="img_link">  
+                                <img src="image/thumbnail_pumpkin.jpg" class="img">
+                                <p class="text">
+                                    따뜻 담백 호박! 든든한 호박죽으로 한끼 해결하기
+                                </p>
+                            </a>
                         </li>
-                        <li>
-                            <img src="image/thumbnail_lime.jpg" class="img">
-                            <p class="text">
-                                상큼한 라임청 담기
-                            </p>
+                        <li class="img_wrap">
+                            <a href="#" class="img_link">  
+                                <img src="image/thumbnail_lime.jpg" class="img">
+                                <p class="text">
+                                    상큼한 라임청 담기
+                                </p>
+                            </a>
                         </li>
-                        <li>
-                            <img src="image/thumbnail_paprika.jpg" class="img">
-                            <p class="text">
-                                아삭아삭 빨간 피망 볶음 레시피
-                            </p>
+                        <li class="img_wrap">
+                            <a href="#" class="img_link">  
+                                <img src="image/thumbnail_paprika.jpg" class="img">
+                                <div class="text">
+                                    아삭아삭 빨간 피망 볶음 레시피
+                                </div>
+                            </a>
                         </li>
-                        <li>
-                            <img src="image/thumbnail_garlic.jpg" class="img">
-                            <p class="text">
-                                바삭바삭 마늘빵 만들기
-                            </p>
+                        <li class="img_wrap">
+                            <a href="#" class="img_link">  
+                                <img src="image/thumbnail_garlic.jpg" class="img">
+                                <p class="text">
+                                    바삭바삭 마늘빵 만들기
+                                </p>
+                            </a>
                         </li>
-                        <li>
-                            <img src="image/thumbnail_onion.jpg" class="img">
-                            <p calss="text">
-                                자색 빛깔 적양파 피클 담기
-                            </p>
+                        <li class="img_wrap">
+                            <a href="#" class="img_link">  
+                                <img src="image/thumbnail_onion.jpg" class="img">
+                                <p class="text">
+                                    자색 빛깔 적양파 피클 담기
+                                </p>
+                            </a>
                         </li>
-                        <li>
-                            <img src="image/thumbnail_avocado.jpg" class="img">
+                        <li class="img_wrap">
+                            <a href="#" class="img_link">  
+                                <img src="image/thumbnail_avocado.jpg" class="img">
+                                <p class="text">
+                                    건강한 아보카도 샌드위치 만들기
+                                </p>
+                            </a>
                         </li>
                     </ul>
-                    <button class="more_view">더보기</button>
+                    <div class="more_wrap">
+                        <button type="button" class="more_view">
+                            <div class="arrow"></div>더보기
+                        </button>
+                    </div>
                 </div>
                 <div class="send_msg">
                     <div class="title">
                         <div class="msg1">전하고 싶은 말을 남겨주세요.</div>
                         <div class="msg2">답변을 원하시면 이메일을 꼭 적어주세요.</div>
                     </div>
-                    <form>
-                        <div class="nickname">
-                            <label name="" value="" for="nickname">닉네임</label>
-                            <input type="text" id="nickname" placeholder="NICKNAME">
-                            <button type="submit">전송하기</button>
+                    <form class="send_form"> 
+                        <div class="nickname_wrap">
+                            <label name="" value="" for="nickname" class="label_name">닉네임</label>
+                            <input type="text" id="nickname" placeholder="NICKNAME" class="nickname">
+                            <button type="submit" class="send_button">전송하기</button>
                         </div>
-                        <div class="e_mail">
-                            <label for="e_mail">이메일</label>
-                            <input type="email">@
-                            <select>
-                                <option selected>선택하세요</option>
-                                <option>naver.com</option>
-                                <option>daum.net</option>
-                            </select>
+                        <div class="email_wrap">
+                            <label for="email" class="label_name">이메일</label>
+                                <div class="email">
+                                    <div class="id_wrap">
+                                        <input type="email" placeholder="ID" class="id" id="email">
+                                    </div>         
+                                    <span class="at">@</span>            
+                                    <div class="email_select">
+                                        <select class="list">
+                                        <option value="" selected>선택하세요</option>
+                                        <option value="네이버">naver.com</option>
+                                        <option value="다음">daum.net</option>
+                                        </select>
+                                    </div>
+                                </div>
+                            
                             <textarea class="message" placeholder="전하고 싶은 말을 100자 이내로 적어주세요."></textarea>
                         </div>
                     </form>
                 </div>
-                <div class="notice">
-                    <div class="title">공지사항</div>
-                    <div class="text">다양한 소식을 담은 foodwith! 정식 오픈을 안내드립니다.</div>
-                </div>
-                <div class="information">
-                    <div class="info1">
-                        <span class="title">Creators</span>
-                        <span class="text">푸드 크리에이터</span>
-                        <span class="text">푸드 비즈니스</span>
+                <div class="notice_wrap">
+                    <div class="notice">
+                        <div class="title">공지사항</div>
+                        <a href="#" class="notice_link"><div class="text">다양한 소식을 담은 foodwith! 정식 오픈을 안내드립니다.</div></a>
+                        <!--<div class="more_view">더보기</div>-->
                     </div>
-                    <div class="info2">
-                            <span class="title">Partners</span>
-                            <span class="text">푸드 파트너</span>
-                            <span class="text">푸드 스토어</span>
-                    </div>                   
+                    <div class="information">
+                        <div class="info1">
+                            <div class="title">Creators</div>
+                            <a href="#" class="text">푸드 크리에이터</a>
+                            <a href="#" class="text">푸드 비즈니스</a>
+                        </div>
+                        <div class="info2">
+                            <div class="title">Partners</div>
+                            <a href="#" class="text">푸드 파트너</a>
+                            <a href="#" class="text">푸드 스토어</a>
+                        </div>                   
+                    </div>
                 </div>
             </section>
 
-            <footer class="main_foot">
+            <footer class="foot">
                 <div class="title">
                     <span class="text">회사소개</span>
                     <span class="text">인재채용</span>
@@ -118,7 +149,7 @@
                     <span class="text">고객센터</span>
                 </div>
                 <div class="copyright">
-                    <span class="text"><span class="bold">ⓒfoodwith</span> All Right Reserved.</span>sp
+                    <span class="text"><span class="bold">ⓒfoodwith</span> All Right Reserved.</span>
                 </div>
             </footer>
         </div>
