@@ -1,7 +1,6 @@
 body {
     font-family: 나눔고딕, NanumGothic, 돋움, sans-serif;
 }
-
 .head {
     position: fixed;
     top: 0;
@@ -21,7 +20,6 @@ body {
     height: 50px;
     background: url(image/logo_m.png) no-repeat center;
     background-size: 100%;
-
 }
 .gnb_menu {
     display: inline-block;
@@ -34,6 +32,9 @@ body {
     height: 50px;
     background-size: 50%;
 }
+.nav {
+    margin: 10px 0;
+}
 .nav .name {
     display: none;
     float: left;
@@ -43,8 +44,6 @@ body {
     text-align: center;
     background-color: #fff;
 }
-
-
 .main_section {
     margin-top: 50px;
 }
@@ -94,16 +93,12 @@ body {
     line-height: 43px;
     text-align: center;
 }
-ul {
-
-}
 .main_section .description {
     background-color: #f0f0f0;
     display: inline-block;
 }
 .main_section .description .img_wrap {
     margin: 15px;
-    
 }
 .main_section .description .img {
     border-top: 1px solid rgba(0, 0, 0, 0.1);
@@ -227,7 +222,6 @@ ul {
     color: #333;
     vertical-align: middle;
 }
-
 .main_section .send_msg .send_form .email_select {
     display: inline-block;
     position: absolute;
@@ -273,7 +267,6 @@ select {
     color: #acacac;
     font-family: 나눔고딕, NanumGothic, 돋움, sans-serif; 
 }
-
 .main_section .notice_wrap {
     padding: 20px 15px;
     padding-bottom: 20px;
@@ -332,7 +325,6 @@ select {
     padding-left: 10px;
     border: none;
 }
-
 .foot {
     padding: 20px 25px;
     background-color: #fff;
@@ -359,22 +351,45 @@ select {
 
 
 
+
+
+
+
+.view_section {
+    margin-top: 50px;
+    background-color: #f0f0f0;
+    padding: 20px 15px;
+}
 .view_section .title_wrap {
-    margin: 30px 15px;
+    padding-bottom: 20px;
     border-bottom: 1px solid #c1c1c1;
 }
-.view_section {
-    margin-top: 70px;
+.view_section .food_info {
+    padding-top: 20px;
 }
 .view_section .title_wrap .title {
+    margin: 10px 0;
     font-size: 28px;
     color: #333;
     font-weight: bold;
 }
 .view_section .title_wrap .writer {
+    table-layout: fixed;
+    background-color: inherit;
+    border-collapse: collapse;
     font-size: 14px;
-    color: #666;
+    text-align: left;
 }
+.view_section .title_wrap .writer th, td {
+    padding: 5px 20px 5px 0;
+}
+.view_section .title_wrap .writer th {
+    font-weight: bold;
+    color: #767676;
+}
+.view_section .title_wrap .writer td {
+    color: #666;
+} 
 .view_section .title_wrap .writer .number {
     font-family: tahoma;
 }
