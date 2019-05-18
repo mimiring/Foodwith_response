@@ -1,7 +1,7 @@
 body {
     font-family: 나눔고딕, NanumGothic, 돋움, sans-serif;
 }
-.head {
+.header {
     position: fixed;
     top: 0;
     left: 0;
@@ -11,7 +11,6 @@ body {
 }
 .logo {
     display: inline-block;
-    float: left;
     padding-left: 10px;
 }
 .logo .img{
@@ -22,30 +21,44 @@ body {
     background-size: 100%;
 }
 .gnb_menu {
-    display: inline-block;
     float: right;
-
 }
 .gnb_menu .icon {
     background: url(image/icon_menu.png) no-repeat center;
     width: 46px;
     height: 50px;
     background-size: 50%;
+    appearance: none;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+}
+.gnb_menu .icon:checked + .nav{
+    display: block;
 }
 .nav {
-    margin: 10px 0;
-}
-.nav .name {
     display: none;
-    float: left;
-    width: 100%;
+    position: fixed;
+    display: ;
+    top: 50px;
+    left: 0;
+    right: 0;
+    padding: 10px 0;
+    background-color: #fff;
+}
+.nav_link {
+    display: block;
+}
+.nav_link .name {
     height: 36px;
+    line-height: 36px;
     font-size: 22px;
     text-align: center;
-    background-color: #fff;
 }
 .main_section {
     margin-top: 50px;
+}
+.main_section .banner_wrap {
+    display: block;
 }
 .main_section .banner {
     background-color: #ffee02;
@@ -55,6 +68,8 @@ body {
     width: 250px;
     height: 180px;
     margin: 0 auto;
+    display: block;
+    overflow: hidden;
 }
 .main_section .banner .text {
     display: -webkit-box;
@@ -76,6 +91,7 @@ body {
 }
 .main_section .writer {
     text-align: center;
+    overflow: hidden;
 }
 .main_section .writer .profile_img {
     vertical-align: middle;
@@ -96,13 +112,36 @@ body {
 .main_section .description {
     background-color: #f0f0f0;
     display: inline-block;
+    max-width: 320px;
+    overflow: hidden;
+}
+.main_section .description .img_ul {
+    overflow: hidden;
 }
 .main_section .description .img_wrap {
     margin: 15px;
 }
+.main_section .description .img_wrap .img_link {
+    display: block;
+}
+.main_section .description .img_wrap .img_edge{
+    position: relative;
+    display: inline-block;
+    z-index: 0;
+}
+.main_section .description .img_wrap .img_edge:after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+}
 .main_section .description .img {
-    border-top: 1px solid rgba(0, 0, 0, 0.1);
     width: 100%;
+    height: auto;
+    display: block;
 }
 .main_section .description .text {
     margin: 10px 15px 25px;
@@ -276,6 +315,9 @@ select {
     position: relative;
     display: inline-block;
 }
+.main_section .notice_link {
+    display: block;
+}
 .main_section .notice:after{
     content: '';
     padding: 0 100%;
@@ -397,12 +439,15 @@ select {
     font-size: 16px;
     color: #333;
     font-weight: bold;
+    margin-bottom: 10px;
 }
 .view_section .food_info .description {
     font-size: 14px;
     color: #666;
+    line-height: 20px;
 }
 .view_section .food_info .description .link {
+    display: block;
     color: #3b9a7b;
 }
 
