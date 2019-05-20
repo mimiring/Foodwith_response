@@ -117,14 +117,10 @@ body {
 .main_section .description {
     padding: 15px;
     background-color: #f0f0f0;
-    min-width: 320px;
     overflow: hidden;
 }
 .main_section .description .img_ul {
     overflow: hidden;
-}
-.main_section .description .img_wrap .wrap {
-    display: inline-block;
 }
 .main_section .description .img_wrap .img_link {
     display: block;
@@ -145,7 +141,7 @@ body {
 .main_section .description .img {
     width: 100%;
     height: auto;
-    display: inline-block;
+    display: block;
 }
 .main_section .description .text {
     margin: 10px 15px 25px;
@@ -312,14 +308,17 @@ select {
     padding-bottom: 20px;
     background-color: #f0f0f0;
 }
-.main_section .notice {
-    padding-bottom: 20px;
-    border-bottom: 1px solid #c1c1c1;
+.main_section .notice .contour {
+    display: block;
+    width: 100%;
+    height: 1px;
+    border: 0;
+    background-color: #c1c1c1;
 }
 .main_section .notice_wrap .notice .notice_link {
     display: block;
 }
-.main_section .notice_wrap .notice .cb {
+.main_section .notice_wrap .notice .wrap {
     position: relative;
     padding-right: 55px;
 }
@@ -520,6 +519,88 @@ select {
         box-sizing: border-box;
         resize: none;
     }
+
+
+    .main_section .notice_wrap {
+        padding: 25px 34px;
+    }
+
+    .main_section .notice_wrap .notice .notice_link {
+        display: block;
+    }
+    .main_section .notice_wrap .notice .wrap {
+        position: relative;
+        padding-right: 55px;
+        margin-bottom: 30px;
+    }
+    .main_section .notice:before{
+        content: '';
+        border-bottom: 1px solid #c1c1c1;
+    }
+    .main_section .notice_wrap .notice .title {
+        margin-bottom: 10px;
+        font-size: 16px;
+        color: #333;
+        font-weight: bold;
+    }
+    .main_section .notice_wrap .notice .text {
+        width: 100%;
+        display: -webkit-box;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        -webkit-box-orient: vertical;
+        -webkit-line-clamp: 1;
+        max-height: 16px;
+        font-size: 14px;
+        line-height: 16px;
+        color: #333;
+    }
+    .main_section .notice_wrap .notice .more_view {
+        position: absolute;
+        right: 0;
+        bottom: 0;
+        font-size: 14px;
+        color: #333;
+        width: 50px;
+        text-align: center;
+    }
+    .main_section .notice_wrap .information .title {
+        padding-top: 20px;
+        margin-bottom: 10px;
+        font-size: 16px;
+        color: #333;
+        font-weight: bold;
+    }
+    .main_section .information .text {
+        display: inline-block;
+        padding-right: 10px;
+        text-align: center;
+        font-size: 14px;
+        color : #333;
+        border-right: 1px solid #c1c1c1;
+    }
+    .main_section .information .text:last-child {
+        padding-left: 10px;
+        border: none;
+    }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 }
 
 .view_section {
