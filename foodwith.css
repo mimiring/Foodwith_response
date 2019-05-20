@@ -475,15 +475,9 @@ select {
         font-size: 18px;
         line-height: 22px;
     }
-
-
-
-
-
     .main_section .send_msg {
         padding : 34px 30px;
     }
-
     .main_section .send_msg .title .msg1 {
         font-size: 30px;
     }
@@ -519,12 +513,9 @@ select {
         box-sizing: border-box;
         resize: none;
     }
-
-
     .main_section .notice_wrap {
         padding: 25px 34px;
     }
-
     .main_section .notice_wrap .notice .notice_link {
         display: block;
     }
@@ -583,23 +574,33 @@ select {
         padding-left: 10px;
         border: none;
     }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+}
+@media screen and (min-width: 1024px) {
+    .header {
+        max-width: 988px;
+        margin: 0 auto;
+        height: 70px;
+        z-index: 1;
+    }
+    .header .nav .name {
+        height: 70px;
+        line-height: 70px;
+    }
+    .header .nav .name:hover {
+        font-weight: bold;
+    }
+    .header .nav .nav_link:last-child .name {
+        padding-right: 0;
+    }
+    .logo {
+        padding-left: 0px;
+    }
+    .logo .img{
+        height: 70px;
+    }
+    .gnb_menu .icon {
+        height: 70px;
+    }
 
 }
 
