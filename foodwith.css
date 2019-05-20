@@ -8,6 +8,7 @@ body {
     right: 0;
     height: 50px;
     background-color: #fff;
+    z-index: 1;
 }
 .logo {
     display: inline-block;
@@ -24,27 +25,32 @@ body {
     float: right;
 }
 .gnb_menu .icon {
-    background: url(image/icon_menu.png) no-repeat center;
+    background: url(image/icon_menu.png) no-repeat;
+    background-size: 50%;
+    background-position: 50% 50%;
     width: 46px;
     height: 50px;
-    background-size: 50%;
-    appearance: none;
-    -webkit-appearance: none;
-    -moz-appearance: none;
-}
-.gnb_menu .icon:checked + .nav{
     display: block;
+    color: transparent;
+    font-size: 0;
 }
+/*.gnb_menu .icon:checked + .nav{
+    display: block;
+}*/
 .nav {
     display: none;
     position: fixed;
-    display: ;
     top: 50px;
     left: 0;
     right: 0;
     padding: 10px 0;
     background-color: #fff;
 }
+
+.nav.visible{
+    display: block;
+}
+
 .nav_link {
     display: block;
 }
@@ -52,6 +58,7 @@ body {
     height: 36px;
     line-height: 36px;
     font-size: 22px;
+    color: #333;
     text-align: center;
 }
 .main_section {
@@ -72,6 +79,7 @@ body {
     overflow: hidden;
 }
 .main_section .banner .text {
+    margin-bottom: 20px;
     display: -webkit-box;
     overflow: hidden;
     text-overflow: ellipsis;
@@ -82,14 +90,16 @@ body {
     line-height: 28px;
     color: #333;
 }
-.main_section .writer:before {
-    content: '';
+.main_section .banner .contour {
     display: block;
-    width: 30px;
-    margin: 20px auto;
-    border-bottom: 1px solid #000;
+    width: 20px;
+    height: 1px;
+    margin: 0 auto;
+    border: 0;
+    background-color: #000;
 }
 .main_section .writer {
+    padding-top: 20px;
     text-align: center;
     overflow: hidden;
 }
@@ -110,16 +120,17 @@ body {
     text-align: center;
 }
 .main_section .description {
+    padding: 15px;
     background-color: #f0f0f0;
-    display: inline-block;
-    max-width: 320px;
+    min-width: 320px;
     overflow: hidden;
 }
 .main_section .description .img_ul {
     overflow: hidden;
 }
-.main_section .description .img_wrap {
-    margin: 15px;
+
+.main_section .description .img_wrap .wrap {
+    display: inline-block;
 }
 .main_section .description .img_wrap .img_link {
     display: block;
@@ -127,7 +138,6 @@ body {
 .main_section .description .img_wrap .img_edge{
     position: relative;
     display: inline-block;
-    z-index: 0;
 }
 .main_section .description .img_wrap .img_edge:after {
     content: '';
@@ -141,7 +151,7 @@ body {
 .main_section .description .img {
     width: 100%;
     height: auto;
-    display: block;
+    display: inline-block;
 }
 .main_section .description .text {
     margin: 10px 15px 25px;
@@ -155,9 +165,6 @@ body {
     line-height: 18px;
     text-align: center;
     color: #333;
-}
-.main_section .description .more_wrap {
-    padding: 15px;
 }
 .main_section .description .more_wrap .more_view {
     padding: 0;
@@ -248,7 +255,6 @@ body {
     display: inline-block;
     width: 49%;
 }
-
 .main_section .send_msg .send_form .email .id {
     display: inline-block;
     width: 100%;
@@ -311,16 +317,19 @@ select {
     padding-bottom: 20px;
     background-color: #f0f0f0;
 }
-.main_section .notice {  
-    position: relative;
-    display: inline-block;
+.main_section .notice {
+    padding-bottom: 20px;
+    border-bottom: 1px solid #c1c1c1;
 }
-.main_section .notice_link {
+.main_section .notice_wrap .notice .notice_link {
     display: block;
 }
-.main_section .notice:after{
+.main_section .notice_wrap .notice .cb {
+    position: relative;
+    padding-right: 55px;
+}
+.main_section .notice:before{
     content: '';
-    padding: 0 100%;
     border-bottom: 1px solid #c1c1c1;
 }
 .main_section .notice_wrap .notice .title {
@@ -330,6 +339,7 @@ select {
     font-weight: bold;
 }
 .main_section .notice_wrap .notice .text {
+    width: 100%;
     display: -webkit-box;
     overflow: hidden;
     text-overflow: ellipsis;
@@ -344,9 +354,10 @@ select {
     position: absolute;
     right: 0;
     bottom: 0;
-
     font-size: 14px;
     color: #333;
+    width: 50px;
+    text-align: center;
 }
 .main_section .notice_wrap .information .title {
     padding-top: 20px;
@@ -390,12 +401,87 @@ select {
     font-weight: bold
 }
 
-
-
-
-
-
-
+@media screen and (min-width: 768px) {
+    .header .nav {
+        display: inline-block;
+        position: absolute;
+        top: 0;
+        left: inherit;
+        padding: 0;
+    }
+    .nav .name {
+        font-size: 18px;
+        line-height: 50px;
+        height: 50px;
+        display: inline-block;
+        padding: 0 10px;
+    }
+    .header .nav .nav_link {
+        display: inline-block;
+    }
+    .gnb_menu .icon {
+        display: none;
+    }
+    .main_section .banner {
+        position: relative;
+        padding: 30px 34px;
+        height: 265px;
+    }
+    .main_section .banner .img {
+        width: 350px;
+        height: 252px;
+        position: absolute;
+        right: 34px;
+        vertical-align: middle;
+    }
+    .main_section .banner .text {
+        -webkit-line-clamp: 3;
+        max-height: 120px;
+        font-size: 32px;
+        line-height: 40px;
+        padding: 20px 350px 30px 0;
+    }
+    .main_section .banner .contour {
+        width: 30px;
+        margin-left: 0;
+    }
+    .main_section .writer {
+        text-align: left;
+        padding-right: 350px;
+    }
+    .main_section .writer .profile_img {
+        width: 40px;
+        height: 40px;
+    }
+    .main_section .writer .name {
+        font-size: 18px;
+        line-height: 45px;
+    }
+    .main_section .description {
+        background-color: #f0f0f0;
+        max-width: 1023px;
+        overflow: hidden;
+        padding: 15px 34px;
+    }
+    .main_section .description .img_wrap {
+        float: left;
+        margin: 0;
+        width: 50%;
+        font-size: 0;
+    }
+    .main_section .description .img_wrap .wrap {
+        margin-left: 10px;
+    }
+    .main_section .description .img_wrap:nth-child(2n+1) .wrap{
+        margin-left: 0px;
+        margin-right: 10px;
+    }
+    .main_section .description .text {
+        max-height: 22px;
+        font-size: 18px;
+        line-height: 22px;
+    }
+}
 
 .view_section {
     margin-top: 50px;
