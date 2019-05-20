@@ -34,9 +34,6 @@ body {
     color: transparent;
     font-size: 0;
 }
-/*.gnb_menu .icon:checked + .nav{
-    display: block;
-}*/
 .nav {
     display: none;
     position: fixed;
@@ -46,11 +43,9 @@ body {
     padding: 10px 0;
     background-color: #fff;
 }
-
 .nav.visible{
     display: block;
 }
-
 .nav_link {
     display: block;
 }
@@ -128,7 +123,6 @@ body {
 .main_section .description .img_ul {
     overflow: hidden;
 }
-
 .main_section .description .img_wrap .wrap {
     display: inline-block;
 }
@@ -194,6 +188,7 @@ body {
 }
 .main_section .send_msg .send_form {
     position: relative;
+    box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.8);
 }
 .main_section .send_msg .title .msg1 {
     margin: 10px 0;
@@ -480,6 +475,50 @@ select {
         max-height: 22px;
         font-size: 18px;
         line-height: 22px;
+    }
+
+
+
+
+
+    .main_section .send_msg {
+        padding : 34px 30px;
+    }
+
+    .main_section .send_msg .title .msg1 {
+        font-size: 30px;
+    }
+    .main_section .send_msg .title .msg2 {
+        font-size: 18px;
+    }
+    .main_section .send_msg form {
+        padding: 50px;
+    }
+    .main_section .send_msg .send_form .send_button {
+        top: 30px;
+        right: 50px;
+        width: 100px;
+        height: 40px;
+        font-size: 15px;
+    }
+    .main_section .send_msg .send_form .email_wrap {
+        margin-top: 40px;
+    }
+    .main_section .send_msg .send_form .email_select .list{
+        font-size: 14px;
+        color: #333;
+    }
+    select {
+        appearance: none;
+        -webkit-appearance: none;
+        -moz-appearance: none;
+    }
+    .main_section .send_msg .send_form .message {
+        margin-top: 40px;
+        width: 100%;
+        height: 100px;
+        box-sizing: border-box;
+        resize: none;
     }
 }
 
