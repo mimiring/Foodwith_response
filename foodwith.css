@@ -1,7 +1,7 @@
 body {
     font-family: 나눔고딕, NanumGothic, 돋움, sans-serif;
 }
-.main_wrap {
+.main_wrap, .view_wrap {
     position: fixed;
     top: 0;
     right: 0;
@@ -686,6 +686,7 @@ select {
     .main_section .description .img_ul {
         position: relative;
         padding-bottom: 20px;
+        margin: 0 -10px;
     }
     .main_section .description .img_wrap {
         float: left;
@@ -723,8 +724,9 @@ select {
         line-height: 60px;
         margin: 0;
     }
-    .main_section .description .img_wrap:hover .text_wrap .text {
+    .main_section .description .img_wrap:hover .text {
         visibility: visible;
+        z-index: 2;
     }
     .main_section .description .img_wrap:hover .wrap:after {
         content: '';
@@ -809,9 +811,7 @@ select {
     padding-bottom: 20px;
     border-bottom: 1px solid #c1c1c1;
 }
-.view_section .food_info {
-    padding-top: 20px;
-}
+
 .view_section .title_wrap .title {
     margin: 10px 0;
     font-size: 28px;
@@ -838,22 +838,39 @@ select {
 .view_section .title_wrap .writer .number {
     font-family: tahoma;
 }
-.view_section .food_info .title {
+.view_section  .title {
     font-size: 16px;
     color: #333;
     font-weight: bold;
     margin-bottom: 10px;
 }
-.view_section .food_info .description {
+.view_section .food_info {
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+.view_section .description {
     font-size: 14px;
     color: #666;
     line-height: 20px;
 }
-.view_section .food_info .description .link {
+.view_section .food_info .link {
     display: block;
     color: #3b9a7b;
+    text-decoration: underline;
+    line-height: 24px;
 }
-
+.view_section .material {
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+.view_section .make {
+    padding-top: 20px;
+    padding-bottom: 20px;
+    list-style-position: inside;
+    list-style-type: decimal;
+    text-indent: -16px;
+    padding-left:15px;
+}
 .view_section .summary {
     table-layout: fixed;
     border-collapse: collapse;
