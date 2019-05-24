@@ -43,12 +43,14 @@ body {
     font-size: 0;
 }
 .nav {
+    background-color: #fff;
     display: none;
     position: fixed;
     top: 50px;
     left: 0;
     right: 0;
     padding: 10px 0;
+
 }
 .nav.visible{
     display: block;
@@ -408,9 +410,10 @@ select {
     text-align: center;
 }
 .foot .text {
-    padding-right: 5px;
+    padding-right: 10px;
+    font-size: 14px;
 }
-.foot .text:last-child{
+.foot .text_link:last-child .text{
     padding-right: 0;
 }
 .foot .copyright {
@@ -602,7 +605,7 @@ select {
 }
 
 @media screen and (min-width: 1024px) {
-    .main_wrap {
+    .main_wrap, .view_wrap {
         position: fixed;
         height: 70px;
     }
@@ -832,8 +835,9 @@ select {
     font-weight: bold;
     color: #767676;
 }
-.view_section .title_wrap .writer td {
+.view_section .title_wrap .writer .nickname, .description {
     color: #666;
+    border: none;
 } 
 .view_section .title_wrap .writer .number {
     font-family: tahoma;
@@ -863,30 +867,105 @@ select {
     padding-top: 20px;
     padding-bottom: 20px;
 }
+
 .view_section .make {
     padding-top: 20px;
     padding-bottom: 20px;
+}
+.view_section .make .description {
     list-style-position: inside;
     list-style-type: decimal;
     text-indent: -16px;
-    padding-left:15px;
+    padding-left: 16px;
+
+}
+.view_section .make .description .text {
+    line-height: 20px;
+    padding-bottom: 3px;
 }
 .view_section .summary {
     table-layout: fixed;
     border-collapse: collapse;
-    border: 1px #c1c1c1;
+    border: 1px solid #c1c1c1;
     background-color: #eaeaea;
+    margin: 10px 0 30px;
+}
+.view_section .summary .title, .summary_description {
+    border: 1px solid #c1c1c1;
+    padding: 5px 3px;
 }
 .view_section .summary .title {
+    line-height: 22px;
     font-size: 16px;
     color: #333;
     font-weight: bold;
+    text-align: left;
 }
-.view_section .summary .description {
+.view_section .summary {
+    width: 100%;
+}
+.view_section .summary .first, .third {
+    width: 90px;
+}
+.view_section .summary .summary_description {
+    vertical-align: middle;
+    line-height: 20px;
     font-size: 14px;
     color: #666;
 }
-.view_section .ficture_wrap .img {
-    width: 100%;
-    margin: 0 15px;
+.view_section .picture_wrap {
+    text-align: center;
 }
+.view_section .picture_wrap .img {
+    width: 100%;
+}
+.view_section .picture_wrap .description {
+    padding: 10px 0px 20px;
+    font-size: 14px;
+    color: #666;
+}
+@media screen and (min-width: 768px) {
+    .view_section .summary .third {
+        width: auto;
+    }
+    .view_section .picture_wrap .img {
+        max-width: 600px;
+    }
+}
+@media screen and (min-width: 1024px) {
+    .view_wrap {
+        position: fixed;
+        height: 70px;
+    }
+    .header {
+        max-width: 988px;
+        margin: 0 auto;
+        height: 70px;
+        z-index: 1;
+    }
+    .header .nav .name {
+        height: 70px;
+        line-height: 70px;
+    }
+    .header .nav .name:hover {
+        font-weight: bold;
+    }
+    .header .nav .nav_link:last-child .name {
+        padding-right: 0;
+    }
+    .logo {
+        padding-left: 0px;
+    }
+    .logo .img{
+        height: 70px;
+    }
+    .gnb_menu .icon {
+        height: 70px;
+    }
+    .view_section .title_wrap, .food_info, .material, .make, .summary_wrap, .picture_wrap {
+        max-width: 988px;
+        margin: 0 auto;
+    }
+
+}
+
