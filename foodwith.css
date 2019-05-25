@@ -12,7 +12,6 @@ body {
 }
 .header_area {
     position: relative;
-    height: 50px;
 }
 .logo_link {
     display: inline-block;
@@ -133,12 +132,16 @@ body {
 .main_section .description .img_ul {
     overflow: hidden;
 }
+.main_section .description .img_wrap {
+    text-align: center;
+}
 .main_section .description .img_wrap .img_link {
     display: block;
 }
 .main_section .description .img_wrap .img_edge{
     position: relative;
     display: inline-block;
+    vertical-align: top;
 }
 .main_section .description .img_wrap .img_edge:after {
     content: '';
@@ -156,15 +159,11 @@ body {
 }
 .main_section .description .text {
     margin: 10px 15px 25px;
-    max-height: 18px;
-    display: -webkit-box;
     overflow: hidden;
+    white-space: nowrap;
     text-overflow: ellipsis;
-    -webkit-box-orient: vertical;
-    -webkit-line-clamp: 1;
     font-size: 14px;
     line-height: 18px;
-    text-align: center;
     color: #333;
 }
 .main_section .description .more_wrap .more_view {
