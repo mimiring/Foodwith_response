@@ -9,19 +9,19 @@
     </head>
 
     <body>
-
-        <div class="main_wrap">
-            <header class="header">
-                <a href="#" class="logo"><div class="img"></div></a>
-                <div class="gnb_menu">
+        <header class="header">
+            <div class="header_area">
+                <a href="#" class="logo_link"><h1 class="logo">foodwith</h1></a>
+                <div class="gnb">
                     <a href="#" class="icon" type="button">메뉴</a>
-                    <nav class="nav">
-                        <a href="#" class="nav_link"><div class="name">About</div></a>
-                        <a href="#" class="nav_link"><div class="name">Work</div></a>
-                        <a href="#" class="nav_link"><div class="name">Contact</div></a>
+                    <nav class="menu">
+                        <a href="#" class="menu_item">About</a>
+                        <a href="#" class="menu_item">Work</a>
+                        <a href="#" class="menu_item">Contact</a>
                     </nav>
-            </header>
-         </div>
+                </div>
+            </div>
+        </header>
             <section class="main_section">
                 <a href="#" class="banner_wrap">
                     <div class="banner">
@@ -192,16 +192,16 @@
                     <span class="text"><span class="bold">ⓒfoodwith</span> All Right Reserved.</span>
                 </div>
             </footer>
-        </div>
-        </div>
+        
+        
         <script>
-            var menu = document.querySelector('.gnb_menu .icon');
-            var nav = document.querySelector('.gnb_menu .nav');
+            var menu_button = document.querySelector('.gnb .icon');
+            var nav = document.querySelector('.gnb .menu');
             function handleClick(e){
                 e.preventDefault();
                 nav.classList.toggle('visible');
             }
-            menu.addEventListener('click', handleClick);
+            menu_button.addEventListener('click', handleClick);
         </script>
     </body>
 </html>
