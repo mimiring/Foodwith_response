@@ -323,6 +323,7 @@ body {
     width: 100%;
     height: 100px;
     box-sizing: border-box;
+    border: 1px solid #c1c1c1;
     resize: none;
 }
 .main_section .send_msg .send_form .message::placeholder {
@@ -387,6 +388,7 @@ body {
 .main_section .notice_wrap .information {
     margin: 0 auto;
     max-width: 988px;
+    font-size: 0;
 }
 .main_section .notice_wrap .information .title {
     padding-top: 20px;
@@ -407,24 +409,24 @@ body {
     padding-left: 10px;
     border: none;
 }
-.foot {
+.footer {
     padding: 20px 25px;
     background-color: #fff;
     font-size: 14px;
     color: #333;
 }
-.foot .title {
+.footer .support {
     margin-bottom: 10px;
     text-align: center;
 }
-.foot .text {
+.footer .text {
     padding-right: 10px;
     font-size: 14px;
 }
-.foot .text_link:last-child .text{
+.footer .text:last-child {
     padding-right: 0;
 }
-.foot .copyright {
+.footer .copyright {
     text-align: center;
 }
 .bold {
