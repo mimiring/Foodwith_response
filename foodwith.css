@@ -13,12 +13,12 @@ body {
 .header_area {
     position: relative;
 }
-.logo_link {
+.header_area .logo_link {
     display: inline-block;
     padding-left: 10px;
     vertical-align: top;
 }
-.logo_link .logo {
+.header_area .logo_link .logo {
     position: relative;
     width: 114px;
     height: 50px;
@@ -27,10 +27,10 @@ body {
     font-size: 0;
     color: transparent;
 }
-.gnb {
+.header_area .gnb {
     float: right;
 }
-.gnb .icon {
+.header_area .gnb .icon {
     background: url(image/icon_menu.png) no-repeat;
     background-size: 50%;
     background-position: 50% 50%;
@@ -40,7 +40,7 @@ body {
     color: transparent;
     font-size: 0;
 }
-.menu {
+.header_area .menu {
     background-color: #fff;
     display: none;
     position: fixed;
@@ -48,12 +48,11 @@ body {
     left: 0;
     right: 0;
     padding: 10px 0;
-
 }
 .menu.visible{
     display: block;
 }
-.menu_item {
+.header_area .menu_item {
     display: block;
     line-height: 36px;
     font-size: 22px;
@@ -410,13 +409,13 @@ body {
     border: none;
 }
 .footer {
-    padding: 20px 25px;
+    padding: 25px 0px;
     background-color: #fff;
     font-size: 14px;
     color: #333;
 }
 .footer .support {
-    margin-bottom: 10px;
+    margin-bottom: 20px;
     text-align: center;
 }
 .footer .text {
@@ -471,6 +470,7 @@ body {
         font-size: 32px;
         line-height: 40px;
         padding: 20px 350px 30px 0;
+        margin-bottom: 0;
     }
     .main_section .banner .contour {
         width: 30px;
@@ -670,6 +670,7 @@ body {
         max-height: 156px;
         font-size: 40px;
         line-height: 52px;
+        margin-bottom: 0;
     }
     .main_section .banner .contour {
         width: 40px;
@@ -818,10 +819,9 @@ body {
     padding: 20px 15px;
 }
 .view_section .title_wrap {
-    padding-bottom: 20px;
+    padding: 10px 0 20px;
     border-bottom: 1px solid #c1c1c1;
 }
-
 .view_section .title_wrap .title {
     margin: 10px 0;
     font-size: 28px;
@@ -858,17 +858,20 @@ body {
 .view_section .food_info {
     padding-top: 20px;
     padding-bottom: 20px;
+    font-size: 0;
 }
 .view_section .description {
     font-size: 14px;
     color: #666;
     line-height: 20px;
+    padding-right: 5px;
 }
 .view_section .food_info .link {
     display: block;
     color: #3b9a7b;
     text-decoration: underline;
-    line-height: 24px;
+    font-size: 14px;
+    line-height: 20px;
 }
 .view_section .material {
     padding-top: 20px;
@@ -938,6 +941,12 @@ body {
     .view_section .picture_wrap .img {
         max-width: 600px;
     }
+    .view_section .food_info .description {
+        display: inline-block;
+    }
+    .view_section .food_info .link {
+        display: inline-block;
+    }
 }
 @media screen and (min-width: 1024px) {
     .header {
@@ -971,6 +980,8 @@ body {
         max-width: 988px;
         margin: 0 auto;
     }
-
+    .view_section .title_wrap {
+        padding-top: 20px;
+    }
 }
 
