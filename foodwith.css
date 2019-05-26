@@ -15,7 +15,6 @@ body {
 }
 .header_area .logo_link {
     display: inline-block;
-    padding-left: 10px;
     vertical-align: top;
 }
 .header_area .logo_link .logo {
@@ -84,7 +83,6 @@ body {
     text-overflow: ellipsis;
     -webkit-box-orient: vertical;
     -webkit-line-clamp: 2;
-    max-height: 56px;
     font-size: 22px;
     line-height: 28px;
     color: #333;
@@ -128,21 +126,21 @@ body {
     max-width: 988px;
     overflow: hidden;
 }
-.main_section .description .img_ul {
+.main_section .description .thumb_list {
     overflow: hidden;
 }
-.main_section .description .img_wrap {
+.main_section .description .thumb_wrap {
     text-align: center;
 }
-.main_section .description .img_wrap .img_link {
+.main_section .description .thumb_wrap .thumb_link {
     display: block;
 }
-.main_section .description .img_wrap .img_edge{
+.main_section .description .thumb_wrap .thumb_edge {
     position: relative;
     display: inline-block;
     vertical-align: top;
 }
-.main_section .description .img_wrap .img_edge:after {
+.main_section .description .thumb_wrap .thumb_edge:after {
     content: '';
     position: absolute;
     top: 0;
@@ -165,7 +163,7 @@ body {
     line-height: 18px;
     color: #333;
 }
-.main_section .description .more_wrap .more_view {
+.main_section .description .more_button {
     padding: 0;
     width: 100%;
     height: 65px;
@@ -175,7 +173,7 @@ body {
     background-color: #fff;
     border: 1px solid #bdbdbd;
 }
-.main_section .description .more_view .arrow {
+.main_section .description .more_button .arrow {
     background: url(image/icon_arrow_more.png) no-repeat;
     width: 16px;
     height: 16px;
@@ -317,7 +315,6 @@ body {
     bottom: 0;
     width: 100%;
 }
-
 .main_section .send_msg .send_form .message {
     width: 100%;
     height: 100px;
@@ -365,12 +362,9 @@ body {
 }
 .main_section .notice_wrap .notice .text {
     width: 100%;
-    display: -webkit-box;
     overflow: hidden;
     text-overflow: ellipsis;
-    -webkit-box-orient: vertical;
-    -webkit-line-clamp: 1;
-    max-height: 16px;
+    white-space: nowrap
     font-size: 14px;
     line-height: 16px;
     color: #333;
@@ -390,7 +384,7 @@ body {
     font-size: 0;
 }
 .main_section .notice_wrap .information .title {
-    padding-top: 20px;
+    margin-top: 20px;
     margin-bottom: 10px;
     font-size: 16px;
     color: #333;
@@ -409,13 +403,13 @@ body {
     border: none;
 }
 .footer {
-    padding: 25px 0px;
+    padding: 20px 0px;
     background-color: #fff;
     font-size: 14px;
     color: #333;
 }
 .footer .support {
-    margin-bottom: 20px;
+    margin-bottom: 10px;
     text-align: center;
 }
 .footer .text {
@@ -462,8 +456,7 @@ body {
         margin: auto 0;
     }
     .main_section .banner .text {
-        -webkit-line-clamp: 3;
-        max-height: 120px;
+        -webkit-line-clamp: 3;;
         font-size: 32px;
         line-height: 40px;
         margin: 20px 350px 30px 0;
@@ -489,21 +482,20 @@ body {
         overflow: hidden;
         padding: 15px 34px;
     }
-    .main_section .description .img_wrap {
+    .main_section .description .thumb_wrap {
         float: left;
         margin: 0;
         width: 50%;
         font-size: 0;
     }
-    .main_section .description .img_wrap .wrap {
+    .main_section .description .thumb_wrap .wrap {
         margin-left: 10px;
     }
-    .main_section .description .img_wrap:nth-child(2n+1) .wrap{
+    .main_section .description .thumb_wrap:nth-child(2n+1) .wrap{
         margin-left: 0px;
         margin-right: 10px;
     }
     .main_section .description .text {
-        max-height: 22px;
         font-size: 18px;
         line-height: 22px;
     }
@@ -573,7 +565,6 @@ body {
         text-overflow: ellipsis;
         -webkit-box-orient: vertical;
         -webkit-line-clamp: 1;
-        max-height: 16px;
         font-size: 14px;
         line-height: 16px;
         color: #333;
@@ -617,6 +608,9 @@ body {
         max-width: 988px;
         margin: 0 auto;
         height: 70px;
+    }
+    .header_area .logo_link {
+        margin-left: -15px;
     }
     .header_area .menu .menu_item {
         line-height: 70px;
@@ -663,7 +657,6 @@ body {
         padding-bottom: 30px;
         width: 460px;
         -webkit-line-clamp: 3;
-        max-height: 156px;
         font-size: 40px;
         line-height: 52px;
         margin-bottom: 0;
@@ -690,30 +683,30 @@ body {
         overflow: hidden;
         padding: 15px 34px;
     }
-    .main_section .description .img_ul {
+    .main_section .description .thumb_list {
         position: relative;
         padding-bottom: 20px;
         margin: 0 -10px;
     }
-    .main_section .description .img_wrap {
+    .main_section .description .thumb_wrap {
         float: left;
         width: 33.3%;
         font-size: 0;
     }
-    .main_section .description .img_wrap .wrap {
+    .main_section .description .thumb_wrap .wrap {
         position: relative;
         margin: 10px;
         margin-right: 10px;
     }
-    .main_section .description .img_wrap:nth-child(2n+1) .wrap{
+    .main_section .description .thumb_wrap:nth-child(2n+1) .wrap{
         margin: 10px;
         margin-right: 10px;
     }
-    .main_section .description .img_wrap:nth-child(3n+1) .wrap{
+    .main_section .description .thumb_wrap:nth-child(3n+1) .wrap{
         margin: 10px;
         margin-right: 10px;
     }
-    .main_section .description .img_wrap:nth-child(3n+3) .wrap{
+    .main_section .description .thumb_wrap:nth-child(3n+3) .wrap{
         margin: 10px;
         margin-right: 10px;
     }
@@ -726,16 +719,15 @@ body {
         bottom: 0;
         left: 0;
         height: 60px;
-        max-height: 60px;
         font-size: 18px;
         line-height: 60px;
         margin: 0;
     }
-    .main_section .description .img_wrap:hover .text {
+    .main_section .description .thumb_wrap:hover .text {
         visibility: visible;
-        z-index: 2;
+        z-index: 1;
     }
-    .main_section .description .img_wrap:hover .wrap:after {
+    .main_section .description .thumb_wrap:hover .wrap:after {
         content: '';
         position: absolute;
         top: 0;
@@ -812,108 +804,82 @@ body {
 .view_section {
     margin-top: 50px;
     background-color: #f0f0f0;
-    padding: 20px 15px;
+    padding: 20px 15px 40px;
 }
-.view_section .title_wrap {
-    padding-bottom: 20px;
-    border-bottom: 1px solid #c1c1c1;
-}
-.view_section .title_wrap .title {
-    margin: 10px 0;
+.view_section .view_section_title {
+    margin-top: 10px;
     font-size: 28px;
     color: #333;
     font-weight: bold;
 }
-.view_section .title_wrap .writer_wrap{
-    position: relative;
+.view_section .meta_list{
     overflow: hidden;
+    margin-top: 10px;
+    padding-bottom: 20px;
+    border-bottom: 1px solid #c1c1c1;
 }
-.view_section .title_wrap .writer {
+.view_section .meta_list .meta_item {
     float: left;
     width: 100%;
     font-size: 14px;
     text-align: left;
 }
-
-.view_section .title_wrap .writer .sortation {
+.view_section .meta_list .meta_item .sortation {
     display: inline-block;
     width: 100px;
     font-weight: bold;
     color: #767676;
     line-height: 25px;
 }
-.view_section .title_wrap .writer .description {
+.view_section .meta_list .meta_item .description {
     display: inline-block;
     color: #666;
     line-height: 25px;
 }
-.view_section .title_wrap .contour {
-    clear: both;
-    height: 1px;
-    color: #c1c1c1;
-    padding-top:20px;
-}
-.view_section .title_wrap .writer th, td {
-    padding: 5px 20px 5px 0;
-}
-.view_section .title_wrap .writer th {
-    font-weight: bold;
-    color: #767676;
-}
-.view_section .title_wrap .writer .nickname, .description {
+.view_section .meta_list .meta_item .nickname, .description {
     color: #666;
     border: none;
 } 
-.view_section .title_wrap .writer .number {
+.view_section .meta_list .meta_item .number {
     font-family: tahoma;
 }
-.view_section  .title {
+.view_section .title {
     font-size: 16px;
     color: #333;
     font-weight: bold;
     margin-bottom: 10px;
 }
 .view_section .food_info {
-    padding-top: 20px;
-    padding-bottom: 20px;
+    margin-top: 20px;
     font-size: 0;
 }
 .view_section .description {
     font-size: 14px;
     color: #666;
     line-height: 20px;
-    padding-right: 5px;
 }
 .view_section .food_info .link {
     color: #3b9a7b;
     text-decoration: underline;
 }
-.view_section .material {
-    padding-top: 20px;
-    padding-bottom: 20px;
-}
-
-.view_section .make {
-    padding-top: 20px;
-    padding-bottom: 20px;
+.view_section .material, .make {
+    margin-top: 30px;
 }
 .view_section .make .description {
     list-style-position: inside;
     list-style-type: decimal;
     text-indent: -16px;
     padding-left: 16px;
-
 }
 .view_section .make .description .text {
     line-height: 20px;
     padding-bottom: 3px;
 }
 .view_section .summary {
+    width: 100%;
     table-layout: fixed;
     border-collapse: collapse;
-    border: 1px solid #c1c1c1;
-    background-color: #eaeaea;
-    margin: 10px 0 30px;
+    margin-top: 30px;
 }
 .view_section .summary .summary_title, .summary_description {
     border: 1px solid #c1c1c1;
@@ -927,9 +893,6 @@ body {
     text-align: left;
     background-color: #eaeaea;
 }
-.view_section .summary {
-    width: 100%;
-}
 .view_section .summary .first, .third {
     width: 90px;
 }
@@ -939,24 +902,31 @@ body {
     font-size: 14px;
     color: #666;
 }
-.view_section .picture_wrap {
-
+.view_section .food_img_wrap {
     text-align: center;
 }
-.view_section .picture_wrap .img {
+.view_section .food_img_wrap .img {
+    margin-top: 20px;
     width: 100%;
     vertical-align: top;
 }
-.view_section .picture_wrap .description {
+.view_section .food_img_wrap .description {
     padding: 10px 0px 20px;
     font-size: 14px;
     color: #666;
 }
+
 @media screen and (min-width: 768px) {
-    .view_section .title_wrap .writer {
+    .view_section_title {
+        margin-top: 20px;
+    }
+    .view_section .meta_list{
+        margin-top: 20px;
+    }
+    .view_section .meta_list .meta_item {
         width: 50%;
     }
-    .view_section .title_wrap .writer:nth-child(2n) {
+    .view_section .meta_list .meta_item:nth-child(2n) {
         float: right;
     }
     .view_section .food_info br {
@@ -965,7 +935,7 @@ body {
     .view_section .summary .third {
         width: auto;
     }
-    .view_section .picture_wrap .img {
+    .view_section .food_img_wrap .img {
         max-width: 600px;
     }
     .view_section .food_info .description {
@@ -975,12 +945,22 @@ body {
         display: inline-block;
     }
 }
+
 @media screen and (min-width: 1024px) {
-    .view_section .title_wrap, .food_info, .material, .make, .summary_wrap, .picture_wrap {
-        max-width: 988px;
-        margin: 0 auto;
+    .view_section {
+        margin-top: 70px;
     }
-    .view_section .title_wrap {
-        padding-top: 20px;
+    .view_section_wrap{
+        max-width: 988px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .view_section .view_section_title {
+        margin-top: 20px;
+    }
+    .view_section .summary {
+        max-width: 988px;
+        margin-left: auto;
+        margin-right: auto;
     }
 }
