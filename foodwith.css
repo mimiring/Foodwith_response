@@ -30,7 +30,7 @@ body {
 .header_area .gnb {
     float: right;
 }
-.header_area .gnb .icon {
+.header_area .gnb .gnb_button {
     background: url(image/icon_menu.png) no-repeat;
     background-size: 50%;
     background-position: 50% 50%;
@@ -428,9 +428,6 @@ body {
 .footer .copyright {
     text-align: center;
 }
-.bold {
-    font-weight: bold
-}
 
 @media screen and (min-width: 768px) {
     .header_area .menu {
@@ -447,7 +444,7 @@ body {
         font-size: 18px;
         line-height: 50px;
     }
-    .gnb .icon {
+    .header_area .gnb .gnb_button {
         display: none;
     }
     .main_section .banner {
@@ -469,8 +466,7 @@ body {
         max-height: 120px;
         font-size: 32px;
         line-height: 40px;
-        padding: 20px 350px 30px 0;
-        margin-bottom: 0;
+        margin: 20px 350px 30px 0;
     }
     .main_section .banner .contour {
         width: 30px;
@@ -631,13 +627,13 @@ body {
     .header_area .menu .menu_item:last-child {
         padding-right: 0;
     }
-    .logo_link {
+    .header_area .logo_link {
         padding-left: 0px;
     }
-    .logo_link .logo {
+    .header_area .logo_link .logo {
         height: 70px;
     }
-    .gnb .icon {
+    .header_area .gnb .gnb_button {
         height: 70px;
     }
     .main_section {
@@ -897,16 +893,17 @@ body {
     background-color: #eaeaea;
     margin: 10px 0 30px;
 }
-.view_section .summary .title, .summary_description {
+.view_section .summary .summary_title, .summary_description {
     border: 1px solid #c1c1c1;
     padding: 5px 3px;
 }
-.view_section .summary .title {
+.view_section .summary .summary_title {
     line-height: 22px;
     font-size: 16px;
     color: #333;
     font-weight: bold;
     text-align: left;
+    background-color: #eaeaea;
 }
 .view_section .summary {
     width: 100%;
@@ -921,10 +918,12 @@ body {
     color: #666;
 }
 .view_section .picture_wrap {
+
     text-align: center;
 }
 .view_section .picture_wrap .img {
     width: 100%;
+    vertical-align: top;
 }
 .view_section .picture_wrap .description {
     padding: 10px 0px 20px;
@@ -949,33 +948,6 @@ body {
     }
 }
 @media screen and (min-width: 1024px) {
-    .header {
-        position: fixed;
-        height: 70px;
-    }
-    .header_area {
-        max-width: 988px;
-        margin: 0 auto;
-        height: 70px;
-    }
-    .header_area .menu .menu_item {
-        line-height: 70px;
-    }
-    .header_area .menu .menu_item:hover {
-        font-weight: bold;
-    }
-    .header_area .menu .menu_item:last-child {
-        padding-right: 0;
-    }
-    .logo_link {
-        padding-left: 0px;
-    }
-    .logo_link .logo {
-        height: 70px;
-    }
-    .gnb .icon {
-        height: 70px;
-    }
     .view_section .title_wrap, .food_info, .material, .make, .summary_wrap, .picture_wrap {
         max-width: 988px;
         margin: 0 auto;
@@ -984,4 +956,3 @@ body {
         padding-top: 20px;
     }
 }
-

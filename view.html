@@ -2,6 +2,7 @@
 <html lang="ko">
     <head>
         <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Viewer</title>
         <link rel="stylesheet" href="reset.css">
         <link rel="stylesheet" href="foodwith.css">
@@ -12,7 +13,7 @@
             <div class="header_area">
                 <a href="#" class="logo_link"><h1 class="logo">foodwith</h1></a>
                 <div class="gnb">
-                    <a href="#" class="icon" type="button">메뉴</a>
+                    <a href="#" class="gnb_button" type="button">메뉴</a>
                     <nav class="menu">
                         <a href="#" class="menu_item">About</a>
                         <a href="#" class="menu_item">Work</a>
@@ -74,10 +75,10 @@
                 </div>
                 <div class="summary_wrap">
                     <table class="summary">
-                        <thead class=>
-                            <th scope="col" class="title first">가열시간</th>
-                            <th scope="col" class="title seccond">조리과정</th>
-                            <th scope="col" class="title third">불조절</th>
+                        <thead>
+                            <th scope="col" class="summary_title first">가열시간</th>
+                            <th scope="col" class="summary_title seccond">조리과정</th>
+                            <th scope="col" class="summary_title third">불조절</th>
                         </thead>
                         <tbody>
                             <tr>
@@ -100,10 +101,14 @@
                 </div>
 
                 <div class="picture_wrap">
-                    <img src="image/strawberry_cake_material.jpg" class="img" alt="밀가루, 달걀">
-                    <figure class="description">[사진1] 밀가루, 달걀 및 재료</figure>
-                    <img src="image/strawberry_cake.jpg" class="img" alt="딸기 케이크">
-                    <figure class="description">[사진2] 딸기 케이크 완성</figure>
+                    <figure>
+                        <img src="image/strawberry_cake_material.jpg" class="img" alt="밀가루, 달걀">
+                        <figcaption class="description">[사진1] 밀가루, 달걀 및 재료</figcaption>
+                    </figure>
+                    <figure>
+                        <img src="image/strawberry_cake.jpg" class="img" alt="딸기 케이크">
+                        <figcaption class="description">[사진2] 딸기 케이크 완성</figcaption>
+                    </figure>
                 </div>
             </section>
             <footer class="footer">
@@ -114,18 +119,19 @@
                     <a href="#" class="text">고객센터</a>
                 </div>
                 <div class="copyright"> 
-                    <span class="bold">ⓒfoodwith</span> All Right Reserved.</span>
+                    <strong>ⓒfoodwith</strong> All Right Reserved.</span>
                 </div>
             </footer>
         </div>
+        
         <script>
-            var menu = document.querySelector('.gnb_menu .icon');
-            var nav = document.querySelector('.gnb_menu .nav');
+            var menu_button = document.querySelector('.gnb .gnb_button');
+            var nav = document.querySelector('.gnb .menu');
             function handleClick(e){
                 e.preventDefault();
                 nav.classList.toggle('visible');
             }
-            menu.addEventListener('click', handleClick);
+            menu_button.addEventListener('click', handleClick);
         </script>
     </body>
 </html>
