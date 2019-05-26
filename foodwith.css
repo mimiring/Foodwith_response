@@ -364,7 +364,7 @@ body {
     width: 100%;
     overflow: hidden;
     text-overflow: ellipsis;
-    white-space: nowrap
+    white-space: nowrap;
     font-size: 14px;
     line-height: 16px;
     color: #333;
@@ -579,7 +579,6 @@ body {
         text-align: center;
     }
     .main_section .notice_wrap .information .title {
-        padding-top: 20px;
         margin-bottom: 10px;
         font-size: 16px;
         color: #333;
