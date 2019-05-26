@@ -867,11 +867,8 @@ body {
     padding-right: 5px;
 }
 .view_section .food_info .link {
-    display: block;
     color: #3b9a7b;
     text-decoration: underline;
-    font-size: 14px;
-    line-height: 20px;
 }
 .view_section .material {
     padding-top: 20px;
@@ -935,6 +932,9 @@ body {
     color: #666;
 }
 @media screen and (min-width: 768px) {
+    .view_section .food_info br {
+        display: none;
+    }
     .view_section .summary .third {
         width: auto;
     }
