@@ -25,25 +25,34 @@
             <section class="view_section">
                 <div class="title_wrap">
                     <h1 class="title">딸기 케이크</h1>
-                    <table class="writer">
-                        <tr>
-                            <th scope="row" class="chef">CHEF</th>
-                            <td class="description nickname">FULLMOON</td>
-                        </tr>
-                        <tr>
-                            <th scope="row">CATEGORY</th>
-                            <td class="description">디저트</td>
-                        </tr>
-                        <tr>
-                            <th scope="row" class="">DATE</th>
-                            <td class="number description">2018.02.02</td>
-                        </tr>
-                        <tr>
-                            <th scope="row"class="">VIEW</th>
-                            <td class="number description">2,356</td>
-                        </tr>
-                    </table>
+                    <ul class="writer_wrap">
+                        <li class="writer">
+                            <div class="sortation">CHEF</div>
+                            <div class="description">FULLMOON</div>
+                        </li>
+                        <li class="writer">
+                            <div class="sortation">CATEGORY</div>
+                            <div class="description">디저트</div>
+                        </li>
+                        <li class="writer">
+                            <div class="sortation">DATE</div>
+                            <div class="description number">2018.02.02</div>
+                        </li>
+                        <li class="writer">
+                            <div class="sortation">VIEW</div>
+                            <div class="description number">2,356</div>
+                        </li>
+                        <!-- <li class="sortation">CHEF</li>
+                        <li class="description">FULLMOON</li>
+                        <li class="sortation">CATEGORY</li>
+                        <li class="description">디저트</li>
+                        <li class="sortation">DATE</li>
+                        <li class="description number">2018.02.02</li>
+                        <li class="sortation">VIEW</li>
+                        <li class="description number">2,356</li> -->
+                    </ul>
                 </div>
+
                 <div class="food_info">
                     <h2 class="title">음식정보</h2>
                     <div class="description">
@@ -68,7 +77,7 @@
                         <li class="text">반으로 자른 딸기를 올려준 뒤, 만들었던 치즈 크림을
                             딸기가 덮어질 정도로 채운다.</li>
                         <li class="text">다시 케이크 시트를 올리고 설탕 시럽을 바른다.</li>
-                        <li class="text">트 위에 생크림을 얇고 평평히 발라준 뒤 크림이 굳을 수 있게
+                        <li class="text">시트 위에 생크림을 얇고 평평히 발라준 뒤 크림이 굳을 수 있게
                             냉장실에 3시간 정도 넣어준다.</li>
                         <li class="text">케이크가 굳었으면 딸기를 올려 장식해준다.</li>
                     </div>
@@ -123,7 +132,7 @@
                 </div>
             </footer>
         </div>
-        
+
         <script>
             var menu_button = document.querySelector('.gnb .gnb_button');
             var nav = document.querySelector('.gnb .menu');

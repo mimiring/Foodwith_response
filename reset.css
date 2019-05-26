@@ -1,6 +1,6 @@
 body, header, section, footer, div, nav, a, h1, h2, ul, ol, li, p,
 img, form, label, input, span, textarea,
-table, thead, tbody, th, tr, td, ul, ol {
+table, thead, tbody, th, tr, td, ul, ol, figure, figcaption {
     margin: 0;
     padding: 0;
     border: 0;

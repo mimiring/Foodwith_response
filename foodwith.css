@@ -23,7 +23,7 @@ body {
     width: 114px;
     height: 50px;
     background: url(image/logo_m.png) no-repeat center;
-    background-size: 100%;
+    background-size: 84px 18px;
     font-size: 0;
     color: transparent;
 }
@@ -32,7 +32,7 @@ body {
 }
 .header_area .gnb .gnb_button {
     background: url(image/icon_menu.png) no-repeat;
-    background-size: 50%;
+    background-size: 16px;
     background-position: 50% 50%;
     width: 46px;
     height: 50px;
@@ -815,7 +815,7 @@ body {
     padding: 20px 15px;
 }
 .view_section .title_wrap {
-    padding: 10px 0 20px;
+    padding-bottom: 20px;
     border-bottom: 1px solid #c1c1c1;
 }
 .view_section .title_wrap .title {
@@ -824,12 +824,34 @@ body {
     color: #333;
     font-weight: bold;
 }
+.view_section .title_wrap .writer_wrap{
+    position: relative;
+    overflow: hidden;
+}
 .view_section .title_wrap .writer {
-    table-layout: fixed;
-    background-color: inherit;
-    border-collapse: collapse;
+    float: left;
+    width: 100%;
     font-size: 14px;
     text-align: left;
+}
+
+.view_section .title_wrap .writer .sortation {
+    display: inline-block;
+    width: 100px;
+    font-weight: bold;
+    color: #767676;
+    line-height: 25px;
+}
+.view_section .title_wrap .writer .description {
+    display: inline-block;
+    color: #666;
+    line-height: 25px;
+}
+.view_section .title_wrap .contour {
+    clear: both;
+    height: 1px;
+    color: #c1c1c1;
+    padding-top:20px;
 }
 .view_section .title_wrap .writer th, td {
     padding: 5px 20px 5px 0;
@@ -931,6 +953,12 @@ body {
     color: #666;
 }
 @media screen and (min-width: 768px) {
+    .view_section .title_wrap .writer {
+        width: 50%;
+    }
+    .view_section .title_wrap .writer:nth-child(2n) {
+        float: right;
+    }
     .view_section .food_info br {
         display: none;
     }
