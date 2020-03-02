@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="ko">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0">
+        <title>Foodwith</title>
+        <link rel="stylesheet" href="./css/main.css">
+    </head>
+
+    <body>
+        <%- include('../components/main/MainHeader')%>
+        <%- include('../components/main/MainSection')%>
+        <%- include('../components/main/MainFooter')%>
+        <script>
+            var menu_button = document.querySelector('.gnb .gnb_button');
+            var nav = document.querySelector('.gnb .menu');
+            function handleClick(e){
+                e.preventDefault();
+                nav.classList.toggle('visible');
+            }
+            menu_button.addEventListener('click', handleClick);
+        </script>
+    </body>
+</html>
