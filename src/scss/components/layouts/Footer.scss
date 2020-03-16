@@ -1,0 +1,22 @@
+.footer {
+    padding: 20px 0px;
+    background-color: #fff;
+    font-size: 14px;
+    color: #333;
+
+    .support {
+        margin-bottom: 10px;
+        text-align: center;
+    }
+    .text {
+        padding-right: 10px;
+        font-size: 14px;
+    }
+    .text:last-child {
+        padding-right: 0;
+    }
+    .copyright {
+        text-align: center;
+    }
+}
+
