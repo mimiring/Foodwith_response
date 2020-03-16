@@ -13,6 +13,11 @@ a {
   text-decoration: none;
   color: inherit; }
 
+select {
+  appearance: none;
+  -webkit-appearance: none;
+  -moz-appearance: none; }
+
 body {
   font-family: 나눔고딕, NanumGothic, 돋움, sans-serif;
   min-width: 320px; }

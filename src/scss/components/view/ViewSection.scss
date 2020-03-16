@@ -1,9 +1,8 @@
 .view_section {
-    
     background-color: #f0f0f0;
-   
     .view_section_wrap {
-margin-top: 50px;padding: 20px 15px 40px;
+        margin-top: 50px;
+        padding: 20px 15px 40px;
         @media screen and (min-width: 1024px) {
             margin-top: 70px;
         max-width: 988px;
@@ -11,7 +10,7 @@ margin-top: 50px;padding: 20px 15px 40px;
         margin-right: auto;
         }
     }
-.view_section_title {
+    .view_section_title {
         margin-top: 10px;
         font-size: 28px;
         color: #333;
