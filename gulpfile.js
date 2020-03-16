@@ -10,6 +10,11 @@ const clean = require('gulp-clean');
 const cleanTask = () => {
     return gulp.src('./dist/*').pipe(clean());
 }
+
+const copy = () => {
+    return gulp.src('./image/*').pipe(gulp.dest('./dist/image'));
+}
+
 // scss -> css
 const scss = () => {
     return gulp.src('src/scss/pages/*.scss')
@@ -28,9 +33,12 @@ const html = () => {
 }
 
 const watch = () => {
-    return gulp.watch('src/**/*', gulp.series(cleanTask, scss, html))
+    return gulp.watch('src/**/*', gulp.series(cleanTask, copy, scss, html))
 }; //gulp의 watch(수정사항 저장 시 자동 반영 기능)
+
+const build = gulp.series(cleanTask, copy, scss, html);
 exports.html = html;
 exports.scss = scss;
-exports.watch = watch;
 exports.cleanTask = cleanTask;
+exports.watch = watch;
+exports.build = build;
