@@ -50,7 +50,7 @@ body {
         position: relative;
         width: 114px;
         height: 50px;
-        background: url(../../image/logo_m.png) no-repeat center;
+        background: url(../image/logo_m.png) no-repeat center;
         background-size: 84px 18px;
         font-size: 0;
         color: transparent; }
@@ -60,7 +60,7 @@ body {
     .header .header_area .gnb {
       float: right; }
       .header .header_area .gnb .gnb_button {
-        background: url(../../image/icon_menu.png) no-repeat;
+        background: url(../image/icon_menu.png) no-repeat;
         background-size: 16px;
         background-position: 50% 50%;
         width: 46px;
@@ -224,7 +224,7 @@ body {
         overflow: hidden; } }
     .main_section .writer .profile_img {
       vertical-align: middle;
-      background: url(../../image/thumbnail_profile_none.jpg) no-repeat;
+      background: url(../image/thumbnail_profile_none.jpg) no-repeat;
       display: inline-block;
       width: 30px;
       height: 30px;
@@ -373,7 +373,7 @@ body {
     background-color: #fff;
     border: 1px solid #bdbdbd; }
     .main_section .more_button .arrow {
-      background: url(../../image/icon_arrow_more.png) no-repeat;
+      background: url(../image/icon_arrow_more.png) no-repeat;
       width: 16px;
       height: 16px;
       background-size: 100%;
@@ -388,7 +388,7 @@ body {
         margin: 0 auto;
         max-width: 988px;
         height: 530px;
-        background: url(../../image/bg_pencil.png) no-repeat 0 350px; } }
+        background: url(../image/bg_pencil.png) no-repeat 0 350px; } }
   .main_section .send_msg {
     padding: 25px 15px;
     margin: 0 auto;
@@ -565,7 +565,7 @@ body {
       right: 0;
       bottom: 0;
       display: block;
-      background: url(../../image/icon_arrow_email.png) no-repeat;
+      background: url(../image/icon_arrow_email.png) no-repeat;
       width: 20px;
       height: 20px;
       background-size: 60%; }
