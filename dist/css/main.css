@@ -805,14 +805,15 @@ body {
         .view_section .summary .third {
           width: auto; } }
   .view_section .food_img_wrap {
+    margin: 0 auto;
     text-align: center; }
+    @media screen and (min-width: 768px) {
+      .view_section .food_img_wrap {
+        max-width: 600px; } }
     .view_section .food_img_wrap .img {
       margin-top: 20px;
       width: 100%;
       vertical-align: top; }
-      @media screen and (min-width: 768px) {
-        .view_section .food_img_wrap .img {
-          max-width: 600px; } }
     .view_section .food_img_wrap .description {
       padding: 10px 0px 20px;
       font-size: 14px;

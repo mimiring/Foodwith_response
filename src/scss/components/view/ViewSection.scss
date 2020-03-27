@@ -130,14 +130,15 @@
         }
     }
     .food_img_wrap {
+        margin: 0 auto;
         text-align: center;
+        @media screen and (min-width: 768px) {
+            max-width: 600px;
+        }
         .img {
             margin-top: 20px;
             width: 100%;
             vertical-align: top;
-            @media screen and (min-width: 768px) {
-                max-width: 600px;
-            }
         }
         .description {
             padding: 10px 0px 20px;
