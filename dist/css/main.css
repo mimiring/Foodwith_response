@@ -56,6 +56,8 @@ body {
         color: transparent; }
         @media screen and (min-width: 1024px) {
           .header .header_area .logo_link .logo {
+            margin: auto 15px;
+            background-size: 114px;
             height: 70px; } }
     .header .header_area .gnb {
       float: right; }
@@ -81,7 +83,10 @@ body {
       top: 50px;
       left: 0;
       right: 0;
-      padding: 10px 0; }
+      padding: 10px 0;
+      font-size: 0; }
+      .header .header_area .menu.visible {
+        display: block; }
       @media screen and (min-width: 768px) {
         .header .header_area .menu {
           display: block;
@@ -90,8 +95,6 @@ body {
           top: 0;
           left: auto;
           padding: 0; } }
-      .header .header_area .menu .visible {
-        display: block; }
       .header .header_area .menu .menu_item {
         display: block;
         line-height: 36px;
@@ -106,6 +109,7 @@ body {
             line-height: 50px; } }
         @media screen and (min-width: 1024px) {
           .header .header_area .menu .menu_item {
+            font-size: 22px;
             line-height: 70px; }
             .header .header_area .menu .menu_item:hover {
               font-weight: bold; }
@@ -711,7 +715,8 @@ body {
     font-weight: bold; }
     @media screen and (min-width: 768px) {
       .view_section .view_section_title {
-        margin-top: 20px; } }
+        margin-top: 20px;
+        font-size: 36px; } }
   .view_section .meta_list {
     overflow: hidden;
     margin-top: 10px;
@@ -789,10 +794,10 @@ body {
       text-align: left;
       background-color: #eaeaea;
       border: 1px solid #c1c1c1;
-      padding: 5px 3px; }
+      padding: 7px 4px; }
     .view_section .summary .summary_description {
       border: 1px solid #c1c1c1;
-      padding: 5px 3px;
+      padding: 7px 4px;
       vertical-align: middle;
       line-height: 20px;
       font-size: 14px;
@@ -818,6 +823,3 @@ body {
       padding: 10px 0px 20px;
       font-size: 14px;
       color: #666; }
-      @media screen and (min-width: 768px) {
-        .view_section .food_img_wrap .description {
-          display: inline-block; } }

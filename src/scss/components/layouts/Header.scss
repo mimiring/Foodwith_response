@@ -31,6 +31,8 @@
                 font-size: 0;
                 color: transparent;
                 @media screen and (min-width: 1024px) {
+                    margin: auto 15px;
+                    background-size: 114px ;
                     height: 70px;
                 }
             }
@@ -62,6 +64,10 @@
             left: 0;
             right: 0;
             padding: 10px 0;
+            font-size: 0;
+            &.visible {
+                display: block;
+            }
             @media screen and (min-width: 768px) {
                 display: block;
                 position: absolute;
@@ -69,12 +75,6 @@
                 top: 0;
                 left: auto;
                 padding: 0;
-            }
-            @media screen and (min-width: 1024px) {
-                //어쩌구 이런식으루
-            }
-            .visible{
-                display: block;
             }
             .menu_item {
                 display: block;
@@ -89,6 +89,7 @@
                     line-height: 50px;
                 }
                 @media screen and (min-width: 1024px)  {
+                    font-size: 22px;
                     line-height: 70px;
                     &:hover {
                         font-weight: bold;
@@ -100,7 +101,4 @@
             }
         }
     }
-    
-    
 }
-
