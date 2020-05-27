@@ -133,24 +133,26 @@
     }
     .description_wrap {
         background-color: #f0f0f0;
-    }
-    .description {
         padding: 15px;
         margin: 0 auto;
-        max-width: 988px;
+        max-width: 1008px;
         overflow: hidden;
         @media screen and (min-width: 768px) {
             background-color: #f0f0f0;
             overflow: hidden;
             padding: 15px 34px;
         }
+        @media screen and (min-width: 1024px) {
+            max-width: none;
+        }
     }
+
     .thumb_list {
         overflow: hidden;
         @media screen and (min-width: 1024px) {
             position: relative;
-            padding-bottom: 20px;
-            margin: 0 -10px;
+            margin: 0 auto;
+            width: 1008px;
         }
           
     }
@@ -158,32 +160,16 @@
         text-align: center;
         @media screen and (min-width: 768px) {
             float: left;
-            margin: 0;
             width: 50%;
             font-size: 0;
-            &:nth-child(2n+1) .wrap{
-                margin-left: 0px;
-                margin-right: 10px;
-            }
         }
         @media screen and (min-width: 1024px){
-            width: 33.3%;
-            &:nth-child(2n+1) .wrap{
-                margin: 10px;
-            }
-            &:nth-child(3n+1) .wrap{
-                margin: 10px;
-                margin-right: 10px;
-            }
-            &:nth-child(3n+3) .wrap{
-                margin: 10px;
-                margin-right: 10px;
-            }
+            width: auto;
             &:hover .summary {
                 visibility: visible;
                 z-index: 1;
             }
-            &:hover .wrap:after {
+            &:hover .thumb_link:after {
                 content: '';
                 position: absolute;
                 top: 0;
@@ -200,18 +186,15 @@
             }
         }
     }
-    .wrap {
-        @media screen and (min-width: 768px) {
-            margin-left: 10px;
-        }
-        @media screen and (min-width: 1024px) {
-            position: relative;
-            margin: 10px;
-            margin-right: 10px;
-        }   
-    }
     .thumb_link {
         display: block;
+        position: relative;
+        @media screen and (min-width: 768px) {
+            margin: 10px;
+        }
+        @media screen and (min-width: 1024px){
+            width: 316px;
+        }
     }
     .thumb_edge {
         position: relative;
@@ -353,6 +336,7 @@
             position: absolute;
             right: 0px;
             top: 50px;
+            opacity: 0.9;
         }
     }
     .label_name {
