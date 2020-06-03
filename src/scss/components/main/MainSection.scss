@@ -134,16 +134,12 @@
     .description_wrap {
         background-color: #f0f0f0;
         padding: 15px;
-        margin: 0 auto;
-        max-width: 1008px;
         overflow: hidden;
         @media screen and (min-width: 768px) {
-            background-color: #f0f0f0;
-            overflow: hidden;
-            padding: 15px 34px;
+            padding: 10px 24px 20px;
         }
         @media screen and (min-width: 1024px) {
-            max-width: none;
+            padding: 10px 0;
         }
     }
 
@@ -242,6 +238,16 @@
             margin: 0;
         }
     }
+    .more_button_wrap {
+        margin: 0px;
+        @media screen and (min-width: 768px) {
+            margin: 0 10px;
+        }
+        @media screen and (min-width: 1024px) {
+            margin: 10px auto;
+            width: 988px;
+        }
+    }
     .more_button {
         padding: 0;
         width: 100%;
@@ -261,6 +267,7 @@
             vertical-align: middle;
         }
     }
+
     .send_msg_wrap {
         background-color: #f4f5f7;
         @media screen and (min-width: 1024px) {
@@ -273,18 +280,17 @@
     }
     .send_msg {
         padding : 25px 15px;
-        margin: 0 auto;
         max-width: 988px;
         @media screen and (min-width: 768px) {
             padding : 34px 30px;
         }
         @media screen and (min-width: 1024px) {
-            padding : 50px 0px;
-            padding-right: 650px;
+            margin-right: 600px;
         }
-        .title {
-            margin-bottom: 20px;
+        // .title {
+        //     margin-bottom: 20px;
             .msg1 {
+                display: block;
                 margin: 10px 0;
                 overflow: hidden;
                 white-space: nowrap;
@@ -298,13 +304,11 @@
                     font-size: 42px;
                     text-align: left;
                     line-height: 50px;
-                    margin: 10px 0;
-                    overflow: visible;
-                    white-space: pre-wrap;
+                    margin: 10px auto 0;
                 }
             }
             .msg2 {
-                margin: 10px 0;
+                margin: 10px 0 20px;
                 overflow: hidden;
                 white-space: nowrap;
                 font-size: 14px;
@@ -314,11 +318,11 @@
                     font-size: 18px;
                 }
                 @media screen and (min-width: 1024px) {
-                    padding: 20px 0;
+                    margin: 30px auto 0;
                     text-align: left;
                 }
             }
-        }
+        // }
     }
     .send_form {
         position: relative;
@@ -384,6 +388,8 @@
         }
     }
     .message {
+        margin-top: 15px;
+        padding: 5px;
         width: 100%;
         height: 100px;
         box-sizing: border-box;
@@ -396,17 +402,10 @@
         }
         @media screen and (min-width: 768px) {
             margin-top: 40px;
-            width: 100%;
-            height: 100px;
-            box-sizing: border-box;
-            resize: none;
+            padding: 10px;
         }
         @media screen and (min-width: 1024px) {
-            padding: 10px;
-            width: 100%;
             height: 120px;
-            box-sizing: border-box;
-            resize: none;
         }
     }
     .email_wrap {
@@ -550,15 +549,16 @@
                             color: #333;
                         }
                     }
-                    .more_view {
-                        position: absolute;
-                        right: 0;
-                        bottom: 0;
-                        font-size: 14px;
-                        color: #333;
-                        width: 50px;
-                        text-align: center;
-                    }
+                   
+                }
+                .more_view {
+                    position: absolute;
+                    right: 0;
+                    bottom: 0;
+                    font-size: 14px;
+                    color: #333;
+                    width: 50px;
+                    text-align: center;
                 }
             }
             .contour {

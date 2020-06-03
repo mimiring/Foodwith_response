@@ -19,6 +19,9 @@ const copy = () => {
 const scss = () => {
     return gulp.src('src/scss/pages/*.scss')
      .pipe(sass.sync())
+     .pipe(rename({
+         basename: 'foodwith'
+     }))
      .pipe(gulp.dest('dist/css'));
 }
 
