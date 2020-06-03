@@ -33,20 +33,20 @@ body {
     .header {
       position: fixed;
       height: 70px; } }
-  .header .header_area {
+  .header .header_inner {
     position: relative; }
     @media screen and (min-width: 1024px) {
-      .header .header_area {
+      .header .header_inner {
         max-width: 988px;
         margin: 0 auto;
         height: 70px; } }
-    .header .header_area .logo_link {
+    .header .header_inner .logo_link {
       display: inline-block;
       vertical-align: top; }
       @media screen and (min-width: 1024px) {
-        .header .header_area .logo_link {
+        .header .header_inner .logo_link {
           margin-left: -15px; } }
-      .header .header_area .logo_link .logo {
+      .header .header_inner .logo_link .logo {
         position: relative;
         width: 114px;
         height: 50px;
@@ -55,11 +55,13 @@ body {
         font-size: 0;
         color: transparent; }
         @media screen and (min-width: 1024px) {
-          .header .header_area .logo_link .logo {
+          .header .header_inner .logo_link .logo {
+            margin: auto 15px;
+            background-size: 114px;
             height: 70px; } }
-    .header .header_area .gnb {
+    .header .header_inner .gnb {
       float: right; }
-      .header .header_area .gnb .gnb_button {
+      .header .header_inner .gnb .gnb_button {
         background: url(../image/icon_menu.png) no-repeat;
         background-size: 16px;
         background-position: 50% 50%;
@@ -69,48 +71,50 @@ body {
         color: transparent;
         font-size: 0; }
         @media screen and (min-width: 768px) {
-          .header .header_area .gnb .gnb_button {
+          .header .header_inner .gnb .gnb_button {
             display: none; } }
         @media screen and (min-width: 1024px) {
-          .header .header_area .gnb .gnb_button {
+          .header .header_inner .gnb .gnb_button {
             height: 70px; } }
-    .header .header_area .menu {
+    .header .header_inner .menu {
       background-color: #fff;
       display: none;
       position: fixed;
       top: 50px;
       left: 0;
       right: 0;
-      padding: 10px 0; }
+      padding: 10px 0;
+      font-size: 0; }
+      .header .header_inner .menu.visible {
+        display: block; }
       @media screen and (min-width: 768px) {
-        .header .header_area .menu {
+        .header .header_inner .menu {
           display: block;
           position: absolute;
           right: 0;
           top: 0;
           left: auto;
           padding: 0; } }
-      .header .header_area .menu .visible {
-        display: block; }
-      .header .header_area .menu .menu_item {
-        display: block;
-        line-height: 36px;
-        font-size: 22px;
-        color: #333;
-        text-align: center; }
-        @media screen and (min-width: 768px) {
-          .header .header_area .menu .menu_item {
-            display: inline-block;
-            padding: 0 10px;
-            font-size: 18px;
-            line-height: 50px; } }
-        @media screen and (min-width: 1024px) {
-          .header .header_area .menu .menu_item {
-            line-height: 70px; }
-            .header .header_area .menu .menu_item:hover {
-              font-weight: bold; }
-            .header .header_area .menu .menu_item:last-child {
-              padding-right: 0; } }
+    .header .header_inner .menu_item {
+      display: block;
+      line-height: 36px;
+      font-size: 22px;
+      color: #333;
+      text-align: center; }
+      @media screen and (min-width: 768px) {
+        .header .header_inner .menu_item {
+          display: inline-block;
+          padding: 0 10px;
+          font-size: 18px;
+          line-height: 50px; } }
+      @media screen and (min-width: 1024px) {
+        .header .header_inner .menu_item {
+          font-size: 22px;
+          line-height: 70px; }
+          .header .header_inner .menu_item:hover {
+            font-weight: bold; }
+          .header .header_inner .menu_item:last-child {
+            padding-right: 0; } }
 
 .footer {
   padding: 20px 0px;
@@ -254,50 +258,36 @@ body {
           font-size: 18px;
           line-height: 40px; } }
   .main_section .description_wrap {
-    background-color: #f0f0f0; }
-  .main_section .description {
+    background-color: #f0f0f0;
     padding: 15px;
-    margin: 0 auto;
-    max-width: 988px;
     overflow: hidden; }
     @media screen and (min-width: 768px) {
-      .main_section .description {
-        background-color: #f0f0f0;
-        overflow: hidden;
-        padding: 15px 34px; } }
+      .main_section .description_wrap {
+        padding: 10px 24px 20px; } }
+    @media screen and (min-width: 1024px) {
+      .main_section .description_wrap {
+        padding: 10px 0; } }
   .main_section .thumb_list {
     overflow: hidden; }
     @media screen and (min-width: 1024px) {
       .main_section .thumb_list {
         position: relative;
-        padding-bottom: 20px;
-        margin: 0 -10px; } }
+        margin: 0 auto;
+        width: 1008px; } }
   .main_section .thumb_wrap {
     text-align: center; }
     @media screen and (min-width: 768px) {
       .main_section .thumb_wrap {
         float: left;
-        margin: 0;
         width: 50%;
-        font-size: 0; }
-        .main_section .thumb_wrap:nth-child(2n+1) .wrap {
-          margin-left: 0px;
-          margin-right: 10px; } }
+        font-size: 0; } }
     @media screen and (min-width: 1024px) {
       .main_section .thumb_wrap {
-        width: 33.3%; }
-        .main_section .thumb_wrap:nth-child(2n+1) .wrap {
-          margin: 10px; }
-        .main_section .thumb_wrap:nth-child(3n+1) .wrap {
-          margin: 10px;
-          margin-right: 10px; }
-        .main_section .thumb_wrap:nth-child(3n+3) .wrap {
-          margin: 10px;
-          margin-right: 10px; }
+        width: auto; }
         .main_section .thumb_wrap:hover .summary {
           visibility: visible;
           z-index: 1; }
-        .main_section .thumb_wrap:hover .wrap:after {
+        .main_section .thumb_wrap:hover .thumb_link:after {
           content: '';
           position: absolute;
           top: 0;
@@ -311,16 +301,15 @@ body {
           right: 0;
           bottom: 0;
           left: 0; } }
-  @media screen and (min-width: 768px) {
-    .main_section .wrap {
-      margin-left: 10px; } }
-  @media screen and (min-width: 1024px) {
-    .main_section .wrap {
-      position: relative;
-      margin: 10px;
-      margin-right: 10px; } }
   .main_section .thumb_link {
-    display: block; }
+    display: block;
+    position: relative; }
+    @media screen and (min-width: 768px) {
+      .main_section .thumb_link {
+        margin: 10px; } }
+    @media screen and (min-width: 1024px) {
+      .main_section .thumb_link {
+        width: 316px; } }
   .main_section .thumb_edge {
     position: relative;
     display: inline-block;
@@ -363,6 +352,15 @@ body {
         font-size: 18px;
         line-height: 60px;
         margin: 0; } }
+  .main_section .more_button_wrap {
+    margin: 0px; }
+    @media screen and (min-width: 768px) {
+      .main_section .more_button_wrap {
+        margin: 0 10px; } }
+    @media screen and (min-width: 1024px) {
+      .main_section .more_button_wrap {
+        margin: 10px auto;
+        width: 988px; } }
   .main_section .more_button {
     padding: 0;
     width: 100%;
@@ -391,49 +389,44 @@ body {
         background: url(../image/bg_pencil.png) no-repeat 0 350px; } }
   .main_section .send_msg {
     padding: 25px 15px;
-    margin: 0 auto;
     max-width: 988px; }
     @media screen and (min-width: 768px) {
       .main_section .send_msg {
         padding: 34px 30px; } }
     @media screen and (min-width: 1024px) {
       .main_section .send_msg {
-        padding: 50px 0px;
-        padding-right: 650px; } }
-    .main_section .send_msg .title {
-      margin-bottom: 20px; }
-      .main_section .send_msg .title .msg1 {
-        margin: 10px 0;
-        overflow: hidden;
-        white-space: nowrap;
-        font-size: 22px;
-        color: #333;
-        text-align: center; }
-        @media screen and (min-width: 768px) {
-          .main_section .send_msg .title .msg1 {
-            font-size: 30px; } }
-        @media screen and (min-width: 1024px) {
-          .main_section .send_msg .title .msg1 {
-            font-size: 42px;
-            text-align: left;
-            line-height: 50px;
-            margin: 10px 0;
-            overflow: visible;
-            white-space: pre-wrap; } }
-      .main_section .send_msg .title .msg2 {
-        margin: 10px 0;
-        overflow: hidden;
-        white-space: nowrap;
-        font-size: 14px;
-        color: #333;
-        text-align: center; }
-        @media screen and (min-width: 768px) {
-          .main_section .send_msg .title .msg2 {
-            font-size: 18px; } }
-        @media screen and (min-width: 1024px) {
-          .main_section .send_msg .title .msg2 {
-            padding: 20px 0;
-            text-align: left; } }
+        margin-right: 600px; } }
+    .main_section .send_msg .msg1 {
+      display: block;
+      margin: 10px 0;
+      overflow: hidden;
+      white-space: nowrap;
+      font-size: 22px;
+      color: #333;
+      text-align: center; }
+      @media screen and (min-width: 768px) {
+        .main_section .send_msg .msg1 {
+          font-size: 30px; } }
+      @media screen and (min-width: 1024px) {
+        .main_section .send_msg .msg1 {
+          font-size: 42px;
+          text-align: left;
+          line-height: 50px;
+          margin: 10px auto 0; } }
+    .main_section .send_msg .msg2 {
+      margin: 10px 0 20px;
+      overflow: hidden;
+      white-space: nowrap;
+      font-size: 14px;
+      color: #333;
+      text-align: center; }
+      @media screen and (min-width: 768px) {
+        .main_section .send_msg .msg2 {
+          font-size: 18px; } }
+      @media screen and (min-width: 1024px) {
+        .main_section .send_msg .msg2 {
+          margin: 30px auto 0;
+          text-align: left; } }
   .main_section .send_form {
     position: relative;
     box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.08);
@@ -445,12 +438,12 @@ body {
         padding: 50px; } }
     @media screen and (min-width: 1024px) {
       .main_section .send_form {
-        padding: 50px;
-        padding-bottom: 40px;
+        padding: 40px 50px;
         width: 490px;
         position: absolute;
         right: 0px;
-        top: 50px; } }
+        top: 50px;
+        opacity: 0.9; } }
   .main_section .label_name {
     display: block;
     font-size: 16px;
@@ -493,6 +486,8 @@ body {
         height: 40px;
         font-size: 15px; } }
   .main_section .message {
+    margin-top: 15px;
+    padding: 5px;
     width: 100%;
     height: 100px;
     box-sizing: border-box;
@@ -505,25 +500,18 @@ body {
     @media screen and (min-width: 768px) {
       .main_section .message {
         margin-top: 40px;
-        width: 100%;
-        height: 100px;
-        box-sizing: border-box;
-        resize: none; } }
+        padding: 10px; } }
     @media screen and (min-width: 1024px) {
       .main_section .message {
-        margin-top: 40px;
-        width: 100%;
-        height: 100px;
-        box-sizing: border-box;
-        resize: none; } }
+        height: 120px; } }
   @media screen and (min-width: 768px) {
     .main_section .email_wrap {
       margin-top: 40px; } }
   @media screen and (min-width: 1024px) {
     .main_section .email_wrap {
-      margin-top: 40px; } }
+      margin-top: 30px; } }
   .main_section .email {
-    margin: 5px 0 15px;
+    margin-top: 5px;
     position: relative; }
     .main_section .email:after {
       content: '';
@@ -641,14 +629,14 @@ body {
                 font-size: 14px;
                 line-height: 16px;
                 color: #333; } }
-          .main_section .notice_wrap .notice .wrap .notice_link .more_view {
-            position: absolute;
-            right: 0;
-            bottom: 0;
-            font-size: 14px;
-            color: #333;
-            width: 50px;
-            text-align: center; }
+        .main_section .notice_wrap .notice .wrap .more_view {
+          position: absolute;
+          right: 0;
+          bottom: 0;
+          font-size: 14px;
+          color: #333;
+          width: 50px;
+          text-align: center; }
       .main_section .notice_wrap .notice .contour {
         display: block;
         width: 100%;
@@ -711,7 +699,8 @@ body {
     font-weight: bold; }
     @media screen and (min-width: 768px) {
       .view_section .view_section_title {
-        margin-top: 20px; } }
+        margin-top: 20px;
+        font-size: 36px; } }
   .view_section .meta_list {
     overflow: hidden;
     margin-top: 10px;
@@ -789,10 +778,10 @@ body {
       text-align: left;
       background-color: #eaeaea;
       border: 1px solid #c1c1c1;
-      padding: 5px 3px; }
+      padding: 7px 4px; }
     .view_section .summary .summary_description {
       border: 1px solid #c1c1c1;
-      padding: 5px 3px;
+      padding: 7px 4px;
       vertical-align: middle;
       line-height: 20px;
       font-size: 14px;
@@ -805,18 +794,16 @@ body {
         .view_section .summary .third {
           width: auto; } }
   .view_section .food_img_wrap {
+    margin: 0 auto;
     text-align: center; }
+    @media screen and (min-width: 768px) {
+      .view_section .food_img_wrap {
+        max-width: 600px; } }
     .view_section .food_img_wrap .img {
       margin-top: 20px;
       width: 100%;
       vertical-align: top; }
-      @media screen and (min-width: 768px) {
-        .view_section .food_img_wrap .img {
-          max-width: 600px; } }
     .view_section .food_img_wrap .description {
       padding: 10px 0px 20px;
       font-size: 14px;
       color: #666; }
-      @media screen and (min-width: 768px) {
-        .view_section .food_img_wrap .description {
-          display: inline-block; } }
