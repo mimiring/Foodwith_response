@@ -9,18 +9,19 @@
 
     <body>
         <header class="header">
-    <div class="header_inner">
-        <a href="./main.html" class="logo_link"><h1 class="logo">foodwith</h1></a>
-        <div class="gnb">
-            <a href="#" class="gnb_button" type="button">메뉴</a>
-            <nav class="menu">
-                <a href="#" class="menu_item">About</a>
-                <a href="#" class="menu_item">Work</a>
-                <a href="#" class="menu_item">Contact</a>
-            </nav>
-        </div>
+  <div class="header_inner">
+    <a href="./main.html" class="logo_link"><h1 class="logo">foodwith</h1></a>
+    <div class="gnb">
+      <a href="#" class="gnb_button" role="button">메뉴</a>
+      <nav class="menu">
+        <a href="#" class="menu_item">About</a>
+        <a href="#" class="menu_item">Work</a>
+        <a href="#" class="menu_item">Contact</a>
+      </nav>
     </div>
+  </div>
 </header>
+
         <section class="main_section">
     <a href="./view.html" class="banner_wrap">
         <div class="banner">
@@ -30,6 +31,8 @@
             </p>
             <hr class ="contour">
             <div class="writer">
+                <!-- [D] api가 제공하는 사용자 이미지가 없을 경우 thumbnial_profile_none.jpg를 사용 -->
+                <!-- <img src="./image/thumbnail_profile_none.jpg" class="profile_img" alt="프로필이미지"> -->
                 <img src="./image/thumbnail_profile.jpg" class="profile_img" alt="프로필이미지">
                 <div class="name">FULLMOON</div>
             </div>
@@ -98,9 +101,8 @@
             <p class="msg2">답변을 원하시면 이메일을 꼭 적어주세요.</p>
             <form class="send_form"> 
                 <div class="nickname_wrap">
-                    <label name="" value="" for="nickname" class="label_name">닉네임</label>
-                    <input type="text" id="nickname" placeholder="NICKNAME" class="nickname">
-                    <button type="submit" class="send_button">전송하기</button>
+                    <label for="nickname" class="label_name">닉네임</label>
+                    <input name="nickname" value="" type="text" id="nickname" placeholder="NICKNAME" class="nickname">
                 </div>
                 <div class="email_wrap">
                     <label for="email" class="label_name">이메일</label>
@@ -109,16 +111,17 @@
                             <input type="email" placeholder="ID" class="id" id="email">
                             <span class="at">@</span>
                         </div>         
-                        <div class="email_select">
+                        <label for="email_domain" class="email_select">
                             선택하세요
-                            <select class="list">
+                            <select id="email_domain" class="list">
                                 <option value="네이버">naver.com</option>
                                 <option value="다음">daum.net</option>
                             </select>
-                        </div>
+                        </label>
                     </div>
                     <textarea class="message" placeholder="전하고 싶은 말을 100자 이내로 적어주세요."></textarea>
                 </div>
+                <button class="send_button">전송하기</button>
             </form>
         </div>
     </div>
